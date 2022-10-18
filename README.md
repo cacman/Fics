@@ -19,7 +19,7 @@ so i've transitioned to writing my stories in twine. twine is an interactive fic
 
 you can learn all about the twine game engine [here](http://twinery.org/)
 
-as it is a game engine, each of the fics will be self contained in an html file with javascript, which can be opened in most modern browsers.
+as it is a game engine, each fic will be self contained in an html file with javascript, which can be opened in most modern browsers.
 
 ## okay just gimme the stories
 
