@@ -28,7 +28,7 @@ fine fine okay okay. here are the links to the stories
 ### max confidant plus plus
 
 ### other stuff
-#### What if?
+#### [What if?](https://github.com/cacman/fics/blob/gh-pages/other/NanaWhatIf-NanaWeek-ver.1.0.html)
 What if Nobu or Hachi didn't go to the fireworks festival?
 What if Nobu opened the door?
 Change the narrative as kami-sama to recreate your desired ending of the fireworks festival!
