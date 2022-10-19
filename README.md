@@ -15,7 +15,7 @@ fine fine okay okay. here are the links to the fics
 
 ### other stuff
 - [What if?](https://v6p9d9t4.ssl.hwcdn.net/html/6682977/index.html){:target="_blank" rel="noopener"}  
-Based on the NANA anime/manga
+Based on the NANA anime/manga  
 What if Nobu or Hachi didn't go to the fireworks festival?  
 What if Nobu opened the door?  
 Change the narrative as kami-sama to recreate your desired ending of the fireworks festival!  
