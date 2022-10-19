@@ -14,7 +14,8 @@ fine fine okay okay. here are the links to the stories
 ### max confidant plus plus
 
 ### other stuff
-#### - [What if?](https://v6p9d9t4.ssl.hwcdn.net/html/6682977/index.html)
+<dl>
+  <dt>[What if?](https://v6p9d9t4.ssl.hwcdn.net/html/6682977/index.html)</dt>
 What if Nobu or Hachi didn't go to the fireworks festival?  
 What if Nobu opened the door?  
 Change the narrative as kami-sama to recreate your desired ending of the fireworks festival!  
