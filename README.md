@@ -7,9 +7,9 @@ hi all thanks for stopping by! i don't really know what i'm doing when it comes 
 
 this is where all my interactive fics will live eventually (I'll edit my posts to have links to this page).
 
-## okay just gimme the stories
+## okay just gimme the fics
 
-fine fine okay okay. here are the links to the stories
+fine fine okay okay. here are the links to the fics
 
 ### max confidant plus plus
 
