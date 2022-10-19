@@ -18,7 +18,9 @@ fine fine okay okay. here are the links to the stories
 What if Nobu or Hachi didn't go to the fireworks festival?
 What if Nobu opened the door?
 Change the narrative as kami-sama to recreate your desired ending of the fireworks festival!
+
 ---
+
 ## so you're probably wondering if you have an ao3, why are you posting here?
 
 the truth is, writing interactive fiction on ao3 is extremely limited. it's great for basic stuff, like linking scenes together or having some basic text. but when it comes to making it pretty by putting images and laying stuff out on a page, it's cumbersome and involves a lot of bending of the limited css they allow.
