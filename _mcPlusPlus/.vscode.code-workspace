@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": ".vscode"
+		},
+		{
+			"path": "assets"
+		},
+		{
+			"path": "dist"
+		},
+		{
+			"path": "twee"
+		}
+	],
+	"settings": {
+		"twee3LanguageTools.storyformat.current": "sugarcube-2"
+	}
+}

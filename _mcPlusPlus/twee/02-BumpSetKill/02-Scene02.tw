@@ -1,0 +1,126 @@
+:: BSK 2.0 {"position":"2200,2200"}
+/*Ann's Trap after Shopping Spree */
+tit: Scene II
+code Time: 4:00 pm|Location: Takamaki Residence|Ann leads Ren through the door, who's wrangling a mountain of shopping bags. Ren stops at the threshold, uneasy.
+
+i-ren-nor: You want me to come in?
+
+i-ann-hp2-sum: Of course!
+
+exp: Ren turns to take off his shoes.
+
+i-ann-nor-sum: Oh, you can leave your shoes on.
+
+exp: Ren nods to himself, taking off his shoes anyway. When he looks up, he is met with a sparkle in Ann's eyes.
+
+i-ann-hp2-sum: Follow me!
+
+:: BSK 2.0 cont1 {"position":"2200,2400"}
+exp: Ren takes in the retro aesthetic of the apartment, 60's pop art paintings blaring from the cold brick walls. Wincing with each step he takes, blemishing the pristine pine flooring beneath him, Ren's suspicions pan out as he is led further down the hall. He stiffens up at the doorway.
+
+i-ann-hp2-sum: Come on in, silly!
+
+exp: Ren keeps his eyes down as he goes through the doorway and places the bags down. He scours through the bags and begins to organize the clothes. Ann trails her hands down his arms as she presses her chest into his back, crafting a sultry voice that tingles his ears.
+
+<!--Take ann's face from Kamoshida's castle and put it on tank top ann title it i-ann-lus -->
+i-ann-nor-sum: Don't worry about that. Let's have a little chat.
+
+exp: Ren freezes in shock. The cognitive dissonance between his suave gentleman and horny teenage boy personas coagulate his brain into a hormonal jello. With what little resolve he has left, he manages to ease Ann off of him before he...
+
+Choose:
+dc1: Backs away and mutters "I'd love to, but I have to go."
+dc2: Follows her and whispers:  I'd love to, but is that all?
+
+:: BSK 2.1a {"position":"2000,2600"}
+<!-- Ren backs away and mutters "I'd love to, but I have to go." -->
+<small> Inspired by Phantom Stardust Chapter 36 </small>
+exp: Ann's chilling cry stops Ren in his tracks.
+
+i-ann-sad-sum: Why?
+
+i-ann-mad-sum: Why do you always pull away from my affection?
+
+exp: Ren stiffly turns around to witness Ann's eyes turn glassy as her voice breaks.
+
+i-ann-cry-sum: Do you really only see me as a friend?
+
+dc1: I'm sorry, Ann. I'm not used to receiving affection.
+dc2: I'm sorry, Ann. I'm afraid of telling you how I feel.
+
+:: BSK 2.1a.1ab {"position":"2000,2800"}
+<small> Inspired by Family Secrets Ch. ?</small>
+exp: Ren hears the blood pumping in his ears as his diaphram constricts, only able to cough up part of his phrase.
+
+i-ren-nor: I'm sorry...
+
+exp: Ann laughs as she shakily exhales in defeat. She shakes her head in disbelief.
+
+i-ann-sad-sum: Of course. I'm such an idiot.
+
+exp: Ren tries take Ann in his arms, but his legs are weighed down from dread. Ann is annoyed by the blank look on his face.
+
+i-ann-mad-sum: Why are you still here? Don't you have some better place to be?
+
+:: BSK 2.1a.1ab cont1 {"position":"2000,3000"}
+exp: Ren's eyes light up in anger. He powers through three steps to Ann before he freezes up again.
+
+i-ren-mad: Of course not! I'd rather be with you!
+
+exp: Ren's sudden confession takes Ann's breath away. Before she can recover, Ren trudges onward and proclaims:
+
+i-ren-mad: But every second I stay here is a second I could lose control and **** it all up.
+
+exp: Ren starts to tremble as he breathes out in despair. His voice starts soft then ractches up to a yell.
+
+i-ren-mad: I can't do that to you Ann. I can't do you like that. After all that he-
+
+exp: Ren clenches his fists, then takes a deep breath.
+
+i-ann-nor-sum: What are you going on about?
+
+:: BSK 2.1a.1ab cont2 {"position":"2000,3200"}
+i-ren-mad: Forget it. I should go.
+
+i-ann-sur-sum: Wait, are you talking about...
+
+i-ren-mad-sum: I said forget it.
+
+exp: Ann chuckles to herself, surprising Ren with a kind smile.
+
+i-ann-hp1-sum: Ren, you're not Kamoshida.
+
+i-ren-mad: How do you know that I won't make the same mistakes, hmm? How do you know, that I won't **** up an already traumatizing experience?
+
+i-ann-nor-sum: Funny you should ask, since I was thinking the same thing.
+
+i-ren-sur: Wha-How does that-Wait...
+
+exp: Ann's kind demeanor turns devilish.
+
+:: BSK 2.1b {"position":"2400,2600"}
+<!--Follows her and whispers:  I'd love to, but is that all?-->
+i-ann-nor-sum: I'll leave that to you.
+exp: Ren lowers the bags gracefully. He turns to find Ann laying back onto her bed, eyeing him with a playful gaze. With her hair sprawled out and her tank top playing hide and seek, Ren struggles to control his demeanor.
+dc1: Plop down on the bed, closing the gap
+dc2: Ease onto the foot of the bed, turning to face Ann 
+
+:: BSK 2.1b.1a {"position":"2400,2600"}
+<!-- dc1: Plop down on the bed, closing the gap -->
+exp: 
+
+:: BSK 2.1b.1b
+<!-- dc2: Ease onto the foot of the bed, turning to face Ann --> 
+exp: 
+
+:: BSK 2.2
+<!--
+Ann
+You're an attractive man, Ren.
+
+Holy shit. Ren kisses Ann. ?.1b: Ann kisses Ren.
+Ren
+What is it, my love?
+
+Ann pauses for a second, before patting the bed to her side. Can I talk to you about something? ?.2 Ann: What's your favorite part of me? Ann: I'd like you get to know me, more than just on the surface. And I'd like to get to know you too. Wouldn't you like to know what's underneath? Take a closer look. Ann: Why do you have to be so nice? You've got to feel some sort of attraction. So easy to talk to you. Oh, I've known you've wanted to sleep with me. No subtlety Well, given your history... ?.3
+Set down the bags and chill out. Ann giving all sorts of hints. Is it just me, or is it getting kind of hot in here? You don't mind if I take off my shirt, do you? Change into something a little more comfortable. Feel free to Ann and Ren masturbation/sex Ren helps carry Ann's bags after a shopping haul, goes to her room to put thi down. As Ren is organizing the clothes on the bed, Ann tells him to stop and to make room. She pats the bed to have Ren sit next to her. Ann starts out with a gleam in her eye, but as the "seduction" goes on, the spark fizzles out. Ren goes along with it, but his acting is just as bad. Ann gets on a serious note on how she's actually afraid of it, going on about how terrible she is, the trauma that she would have, all sorts of excuses. Ren shuts her up by kissing her. He pulls back just as she melts away. Ann is annoyed. Ren talks some smack about it, and Ann shuts him up by doing the same. They get into it, Ren pulls back asking consent. Ann accepts, and he goes down her side, her back. He circles back up to her chest to press lightly, but she freaks out. Ann talks about how this is exactly what she was afraid of, upset that she can't handle it. Ren calms her down, telling her the one step at a time. They slowly go through it, describe the body feedback and how Ann eventually gets comfortable. Stripped down to underwear, Ren fingering her a good time. Gets her off, and then backs off. Putting off the rest for another day.
+-->

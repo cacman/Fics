@@ -1,0 +1,65 @@
+:: StoryData {"position":"4000,0"}
+{
+    "ifid": "C4629298-EDCE-401B-99CF-B298BE95649D",
+    "format": "SugarCube",
+    "format-version": "2.36.1",
+    "start": "Start"
+}
+
+:: StoryTitle {"position":"4000,0"}
+Animating Sae's Face
+
+:: Start {"position":"4000,0"}
+<h1>Animating Sae's Face</h1>
+Let's see if hosting an animated GIF on Github will work in twine!
+
+[[Scene 0: Realization|ANI 0]]
+
+:: ANI 0 {"position":"2200,400"}
+<<nobr>>
+<h3 class="ttl">
+Scene 0: Realization
+</h3>
+<p>
+  <code> Time: 4:00 pm <br /> Location: Blank Void <br />
+    <b>Sae turns in wonder, lost in disbelief.</b>
+  </code>
+</p>
+<div class="grd">
+  <div class="i-sae-sur-ssp"><p><br/></p></div>
+  <div class="texti">
+    <h5>Sae</h5>
+  </div>
+  /*
+  <div class="textx">
+    <p>What is this place?</p>
+  </div>
+  */
+</div>
+<div class="exp">
+  <p>
+    <i>A resounding answer from god answers her question. She jolts up, surprised.</i>
+  </p>
+</div>
+<div class="cut">
+  <div class="c-sae-sur"></div>
+</div>
+<div class="grd">
+  <div class="i-sae-mad-ssp"><p><br/></p></div>
+  <div class="tex">
+    <h5>Sae</h5>
+    <p>Whoever you are, I will make you pay.</p>
+  </div>
+</div>
+<div class="nav">
+  <h3>
+    <br />
+  </h3>
+  <center>
+    <p>
+      <strike>prev</strike> Scene 0: Realization <strike>next</strike>
+      <br /> ?
+    </p>
+  </center>
+</div>
+<</nobr>>

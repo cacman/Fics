@@ -1,0 +1,190 @@
+<!--
+Minimum points to unlock flirt are 3
+Get ryuji points that are positive means that Ren flirts with Ryuji
+ -->
+:: RKL 1.0 {"position":"1000,1200"}
+tit RKL Scene I
+code Time: 3:30 pm|Location: Front Entrance, Protein Lovers Gym|Ryuji turns to Ren with a sly look in his eyes. He flips his towel over his shoulder with a smirk.  
+
+i-ryu-nor-sum: Did you bring spare undies this time?
+
+dc1: Yeah, a towel and a change of underwear.
+dc2: No but I've got protein powder!
+dc3: Shut up.
+
+:: RKL 1.1a {"position":"700,1400"}
+i-ryu-hap-sum: Nice.  
+exp: Ren lets out a shaky groan in despair, dreading the toll on his body from Ryuji's workout.
+
+:: RKL 1.1b {"position":"1000,1400"}
+exp: Ryuji slinks back with his hands in his pockets, dipping his head.
+i-ryu-sad-sum: Bro. 
+
+dc1: Can I borrow yours?
+dc2: I can get a pair across the street.
+
+:: RKL 1.1b.1a {"position":"900,1600"}
+c-ryu-mad
+exp: Ryuji brings his head up, glaring at Ren.
+i-ryu-mad: You're shittin me, right?
+exp: Ren struggles to stifle a laugh, exhaling a puff of air.
+i-ryu-mad-sum: Why are you laughing?
+i-ryu-nor-sum: Oh.
+i-ryu-hap-sum: That one's actually pretty good.
+exp: Ryuji chuckles to himself before facing Ren.
+i-ryu-hap-sum: It'll be kinda gross, but you've got that bath-house nearby yeah?
+exp: Ren nods with a smile. Ryuji's eyes gleam with determination as he approaches the entrance.
+i-ryu-hap-sum: Alright, let's do this!
+
+:: RKL 1.1b.1b {"position":"1100,1600"}
+c-ryu-mad
+exp: Ryuji brings his head up, glaring at Ren.
+i-ryu-mad-sum: You're shittin me, right?
+exp: Ren struggles to stifle a laugh, exhaling a puff of air.
+i-ryu-mad-sum: Why are you laughing?
+i-ryu-nor-sum: Oh.
+i-ryu-hap-sum: That one's actually pretty good.
+exp: Ryuji chuckles to himself before facing Ren.
+i-ryu-nor-sum: Okay, meet me inside when you're done.
+
+:: RKL 1.1c {"position":"1500,1400"}
+i-ryu-hap-sum: What did you say? 
+exp: Ren turns away from Ryuji, covering his face
+i-ryu-sur-sum: Are you...blushing? What the hell?
+dc1: [[I got a bit carried away thinking about you last night...|RKL 1.1c.1a][$Ryuji + 2]]<!--horny response +2 --> 
+dc2: [[I know you are but what am I?|RKL 1.1c.1b][$Ryuji + 1]] <!--embarassed response +1 -->
+dc3: [[Nah man, just a sunburn.|RKL 1.1c.1c]] <!--DUDE response +0-->
+
+:: RKL 1.1c.1a {"position":"1300,1600"}
+i-ryu-sur-sum: What's that supposed to mean?
+exp: Ryuji furrows his brow, eyes widening as he pictures what Ren was doing. He plants his hands on both sides of his head, desperately trying to supress his wild imagination.
+i-ryu-mad-sum: Oh hell no!
+exp: Ryuji turns away, storming off to the entrance.
+i-ryu-mad-sum: Let's go. Standing around here won't do nothing.
+
+:: RKL 1.1c.1b {"position":"1500,1600"}
+exp: Ryuji crosses his arms and scoffs
+i-ryu-mad-sum: What are you, 5?
+exp: Ren smirks and puts his hand on cheek, causing Ryuji to subconsiously do the same.
+i-ryu-sur-sum: Holy s*** I-it sure is hot outside, huh? Good thing we're working out indoors today!
+exp: Ryuji nervously laughs holding the door open for Ren. 
+
+:: RKL 1.1c.1c {"position":"1700,1600"}
+i-ryu-hap-sum: Oh, for real? Damn that sucks. You alright?
+exp: Ren nods with a smile, making his way to the door with Ryuji.
+
+:: RKL 1.2 {"position":"1000,1800"}
+code Time: 3:45 pm|Location: Threshold, Protein Lovers Gym|Ryuji sets his bag down, jamming his feeting into his workout shoes. Ren carefully laces up his to Ryuji's surprise.
+i-ryu-hap-sum: Dude, you got some new kicks? Awesome!
+exp: Ren springs up once he's done lacing his shoes, doing a twirl to show them off.
+i-ryu-nor-sum: Yeah, nice fit!
+exp: Ren's expression loosens, looking downcast at Ryuji's battered sneakers. Ren's amazed that they can still hold together.
+i-ryu-sur-sum: Oh, these? Yeah, they're my lucky shoes.
+exp: Ren struggles to keep his composure as he watches Ryuji stroke his shoes.
+i-ryu-nor-sum: These were the shoes that got me through tryouts, my first meet, my first medal, been through a lot. I should prolly retire these and get new ones, but don't wanna ask my mom, you know?
+exp: Ren nods, lending a hand. Ryuji ignores it and gets up on his own. Ren pulls his hand back, covering it in dismay. He puts his hands at his side before Ryuji can see his hurt expression.
+i-ryu-nor-sum: Anyway, let's get started! 
+
+:: RKL 1.2.cont1 {"position":"1000,2000"}
+<!--
+    Linux way of doing addition
+    upper body: 1
+    lower body: 2
+    cardio: 4
+
+    combinations
+    upper: 1
+    lower: 2 
+    upper + lower: 3
+    cardio: 4
+    upper + cardio: 5
+    lower + cardio: 6
+    all: 7
+ -->
+<<set $work to 0>>
+i-ryu-nor-sum: Oh, but first we gotta stretch. Don't wanna blow out your back 'fore we even get started!
+exp: Ren fails to stifle a laugh.
+i-ryu-nor-sum: Psh. You know what I meant.
+[[continue|RKL 1.3]]
+
+:: RKL 1.3 {"position":"1000,2200"}
+<!--Need to work on the decisions here -->
+<<if $work eq 0>>
+    i-ryu-nor-sum: So, what do you want to do today?
+    dc1: [[Upper body|RKL 1.3a][$work + 1]]
+    dc2: [[Lower body|RKL 1.3b][$work + 2]]
+    dc3: [[Dunno|RKL 1.3c][$work + 4]] 
+
+<<else>>
+    i-ryu-nor-sum: Alright, what's next? 
+    <<if $work lt 4>>
+        dc3: [[Cardio|RKL 1.3c][$work + 4]] 
+    <</if>>
+    <<if ($work % 2) eq 0>>
+         dc1: [[Upper body|RKL 1.3a][$work + 1]]
+    <</if>>
+    <<if ($work % 3) neq 0>>
+        dc2: [[Lower body|RKL 1.3b][$work + 2]]
+    <</if>>
+<</if>>    
+
+:: RKL 1.3a {"position":"800,2400"}
+i-ryu-hap-sum: Getting that beach body for the school trip? I see, you wanna impress the ladies with these guns! 
+exp: Ryuji flexes his supple bicep. Ren gets caught, dumbfounded.
+i-ryu-nor-sum: Ren, you okay?
+exp: Ren snaps back into focus with a sheepish smile.
+i-ryu-flu-sum: Oookay, let's uh get some stretches in.
+
+:: RKL 1.3b {"position":"1000,2400"}
+exp: Ryuji puts his leg on a bench and bends over to retie his shoes, showcasing butt. Ren gets caught staring.
+i-ryu-emb-sum:
+
+:: RKL 1.3c {"position":"1200,2400"}
+<<if $work === 0>>
+    i-ryu-nor-sum: Come on man.  
+    exp: Ryuji sighs, dejected. Eventually, he deduces what to do.
+    i-ryu-hap-sum: Oh! I know! Let's do some cardio to warm up, yeah?
+<<else>>
+    i-ryu-hap-sum: Yeah, that's what I was thinking!
+<</if>>
+exp: Ryu claps Ren on the back and pulls him close. He points over to the row of treadmills. 
+i-ryu-hap-sum: Let's work on that running form!
+
+:: RKL 1.3c.cont1 {"position":"1200,2600"}
+exp: Ren and Ryuji do some walking stretches on the mat next to the treadmills. As Ryuji leads the way, Ren gets caught staring at Ryuji's butt.
+i-ryu-nor-sum: Oh, having trouble with your form?
+exp: Ryuji walks over and adjusts Ren's legs as he walks, unaware that he's cupping Ren's butt.
+i-ryu-nor-sum: Yeah, you gotta keep your leg straight when you bend down, otherwise you're not stretching the right muscles. Also...hey, are you listening? 
+exp: Ren is caught with a slight flush, but manages to keep his composure when he nods.
+i-ryu-sur-sum: Uh...okay. So let's move on to the next one, yeah?
+
+:: RKL 1.3c.cont2 {"position":"1200,2800"}
+do some cardio stuff, keep up with Ryuji, then option for Ren to keep same pace or to impress ryuji. If you impress 
+
+dc1: [[Run faster|RKL 1.3c.cont2.1a][$ryuji + 1]]
+dc2: [[Keep pace|RKL 1.3c.cont2.1b][$ryuji + 0]]
+
+:: RKL 1.3c.cont2.1a {"position":"1100,3000"}
+Ren falls flat on his face off the treadmill, ends the workout
+[[do another workout | RKL 1.2.cont1]]
+
+:: RKL 1.3c.cont2.1b {"position":"1300,3000"}
+Ren is tired, but they get to loop back to another workout
+[[do another workout | RKL 1.2.cont1]]
+
+:: RKL 1.4 {"position":"1000,3300"}
+i-ryu-nor-sum: Whew! I'm beat.
+
+dc1: Yeah, me too.
+dc2: Could do more
+
+:: RKL 1.4a {"position":"900,3500"}
+i-ryu-nor-sum: Nice, means you're working hard! 
+
+:: RKL 1.4b {"position":"1100,3500"}
+i-ryu-sur-sum: For real? 
+
+:: RKL 1.5 {"position":"1000,3700"}
+i-ryu-nor-sum: Nothing like a warm shower to wash away the scent of success.
+exp: Ryuji confidently strides over to the showers, Ren cautiously following as he garners stares from the crowd.
+exp: Fade to black

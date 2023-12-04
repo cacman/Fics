@@ -1,0 +1,28 @@
+<!--
+What am I even going to do in this scene? I should probably make a plan before trying to write out dialogue like an idiot.
+Okay so here's the plan.
+Title: have an actual ****ing description for Ren entering the stadium
+choice one: have ren call ann (-1) or look for ann (+1)
+then ann acting all handsy choice two: bring hand to meet hers (-1)
+ -->
+:: BSK 3.0 {"position":"2200,5100"}
+/*Shiho Invitation to volleyball game */
+tit BSK Scene I
+code Time: 7:30 pm|Location: Gymnasium, Shujin Academy|As the players are warming up, Ren attempts to decipher Ann's mixed signals.
+
+dc1: [[Stir in your seat.|BSK 3.1a][$Ann + 1]]
+dc2: [[Touch her knee.|BSK 3.1b][$Ann - 1]] 
+dc3: [[Take her hand.|BSK 3.1c][$Ann + 0]] 
+
+:: BSK 3.1a {"position":"2000,5300"}
+exp: Ann softly smiles at you, trailing oher hand down your shoulder.
+:: BSK 3.1b {"position":"2200,5300"}
+exp: Ann softly smiles at you, politely brushing your hand off.
+:: BSK 3.1c {"position":"2400,5300"}
+Ann softly smiles at you, gracefully freeing her hand from your grasp.
+
+:: BSK 3.2 {"position":"2200,5500"}
+exp: After an enthusiastic cheer during the hard fought first set, Ann takes a seat. Her enthusiasm fades as she sees Ren spaced out. Ren catches Ann's scowl in his peripheral vision. When he faces her, she looks away and puts on a smile, pretending she didn't see him.
+
+dc1: [[What's up with you?|BSK 3.1b][$Ann - 1]] 
+dc2: [[How are you feeling?|BSK 3.1a][$Ann + 1]]
