@@ -1,0 +1,5641 @@
+/*****MC++ Twine CSS Template v0.1*****/
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+
+@font-face {
+    font-family: p5hatty;
+    src: url(assets/Fonts/p5hatty.ttf);
+}
+
+#story {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+subt{
+  font-size: 150%
+}
+
+*{
+  line-height: 1;
+  font-size: 100%;
+}
+
+code{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100%;
+}
+
+b{
+  font-family: inherit;
+}
+
+/*h4{
+  font-weight: 300;
+  font-size: 110%
+}*/
+
+h5{
+ margin: 0 0 0 0; 
+}
+
+div#passages {
+	width: 80vw;
+    margin-left: 0px;
+    margin-right: 0px;
+  font-family: p5hatty, Arsenal, Verdana, sans-serif;
+}
+
+/*****definitions for the different passage types*****/
+
+.ttl {
+  text-align: center;
+  font-family: Arsenal, Verdana, sans-serif;
+  font-size: 200%
+}
+
+.nav {
+  text-align: center;
+  font-family: inherit;
+  margin: 10vh 0 0 0;
+  font-size: 110%;
+}
+
+.grd {
+  display: grid;
+  /*grid-template: 1fr / 1fr;*/
+  grid-template-columns: 2;
+  height: 25vh;
+  min-height: 128px;
+  max-height: 25vw;
+  width: 50vw;
+  max-width: 720px;
+  /*margin: 6vh 0 0 0;*/
+  /*font-size: 1.5em;*/
+  font-family: p5hatty, Arsenal, Verdana, sans-serif;
+}
+
+.txb {
+  background-image: URL("https://i.imgur.com/WXXtawe.png");
+  width: 628px;
+  height: 180px;
+}
+
+.tex {
+  grid-column: 2;
+  min-height: 128px;
+  max-height: 25vw;
+  width: 50vw;
+  max-width: 360px;
+  /*max-height: 256 px;*/
+  margin: 0px 1vw 0px 1vw;
+  overflow: auto;
+  text-align: justify;
+  font-size: 120%;
+  letter-spacing: 1px
+}
+
+.exp {
+  text-align: center;
+  font-style: italic;
+  font-size: 120%;
+}
+
+.cut {
+  display: grid;
+  min-height: 128px;
+  height: 7vh;
+  max-height: 192px;
+}
+
+.dgrd {
+  position: relative;
+  text-align: left;
+  font-size: 160%;
+  font-family: p5hatty, Arsenal, Verdana, sans-serif;
+  min-height: 250px;
+  max-width: 720px;
+  /*background: URL(https://i.imgur.com/1nPYR0d.png), URL("./assets/diaChoicesWider - Copy.png");*/
+  background: URL("assets/diaChoicesWider - Copy.png");
+  background-size: contain, contain;
+  background-position: right, left;
+  background-repeat: no-repeat;
+  margin: 10vh 0 0 0;
+}
+
+.dc1 {
+  float: left;
+  text-align: center;
+  position: absolute;
+  transform: rotate(11deg);
+  bottom: 65%;
+  left: 17%;
+  height: 50px;
+  width: 50vw;
+  max-width: 225px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.dc2 {
+  float: left;
+  text-align: center;
+  position: absolute;
+  transform: rotate(1deg);
+  bottom: 47%;
+  left: 10%;
+  height: 50px;
+  width: 50vw;
+  max-width: 225px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.dc3 {
+  float: left;
+  text-align: center;
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+  transform: rotate(-12deg);
+  height: 50px;
+  width: 50vw;
+  max-width: 225px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+[class^="im-"] {
+  grid-column: 1;
+  width: 25vw;
+  height: 25vh;
+  min-width: 128px;
+  max-width: 512px;
+  min-height: 128px;
+  max-height: 512px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+[class^="i-"] {
+  grid-column: 1;
+  width: 25vw;
+  height: 25vh;
+  min-width: 128px;
+  max-width: 512px;
+  min-height: 128px;
+  max-height: 512px;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+[class^="c-"] {
+  background-size: 125%;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+}
+
+[class^="c-tae"]{
+ background-position: center 60%; 
+}
+
+[class^="i-ann"]{
+ transform: translate(0,-32px); 
+}
+
+/*****demo character*****/
+
+.i-chr-emo {
+  background-image: URL(https://i.imgur.com/S2dgciS.png);
+}
+.c-chr-emo {
+  background-image: URL(https://i.imgur.com/tsRTSz3.png);
+}
+
+/*****im phone images*****/
+
+.im-ren {
+
+  background-image: URL(https://i.imgur.com/MXrqHXz.png);
+}
+
+.im-ann {
+  background-image: URL(https://64.media.tumblr.com/63ac5c783222fb6a6af9911334a807d3/tumblr_ostusm8BJf1snj2byo2_250.png);
+}
+
+.im-shi {
+  background-image: URL(https://i.imgur.com/IgKA0VI.png);
+}
+
+.im-ryu {
+  background-image: URL(https://64.media.tumblr.com/b99ba23e1abe3614af9755236289b8c9/tumblr_ostusm8BJf1snj2byo6_250.png);
+}
+
+.im-mak {
+  background-image: URL(https://64.media.tumblr.com/72e644e20dc2adc4fa31d204bc3a3c06/tumblr_ostusm8BJf1snj2byo5_250.png);
+}
+
+.im-fut {
+  background-image: URL(https://64.media.tumblr.com/10d3418aa31dcdc6ea52efcd85bd3f65/tumblr_ostusm8BJf1snj2byo3_250.png);
+}
+
+.im-yus {
+  background-image: URL(https://64.media.tumblr.com/87f19e0c35e714f4f82eee5a802087d7/tumblr_ostusm8BJf1snj2byo7_250.png);
+}
+
+.im-har {
+  background-image: URL(https://64.media.tumblr.com/0251015bd288d9fdebe3319843d431cd/tumblr_ostusm8BJf1snj2byo4_250.png);
+}
+
+/*****expression images*****/
+/***
+character codes:
+ren = ren       (000)
+ryu = ryuji     (002)
+ann = ann       (004)
+yus = yusuke    (005)
+mak = makoto    (006)
+har = haru      (007)
+fut = futaba    (008)
+shi = shiho     (101)
+kaw = kawakami  (109)
+mis = mishima   (111)
+sae = sae       (105)
+tae = takemi    (108)
+soj = sojiro    (103)
+yos = yoshida   (TBD)
+mar = maruki    (TBD)
+ake = akechi    (TBD)
+kas = kasumi    (TBD)
+sum = sumire    (TBD)
+chi = chihaya   (TBD)
+iwa = iwai      (TBD)
+oya = oya       (TBD)
+***/
+/***
+expression codes:
+nor = normal
+hap = happy
+mad = mad
+sad = sad
+sur = surprised
+hur = hurt
+blu = blushing
+emb = embarrassed
+008 = 008 placeholder
+009 = 009 placeholder
+***/
+/***
+outfit codes:
+csp = casual spring
+ssp = school spring
+sum = summer
+cfl = casual fall
+sfl = school fall
+cwn = casual winter
+cwe = casual winter w/earmuffs
+new = new years
+xxn = naked
+xxu = underwear 
+***/
+
+.i-ren-nor-csp {
+    background-image:
+        URL(assets/bustups/ren/b000_000_01.png);  
+}
+
+.i-ren-nor-ssp {
+    background-image:
+        URL(assets/bustups/ren/b000_000_02.png);  
+}
+
+.i-ren-nor-sum {
+    background-image:
+        URL(assets/bustups/ren/b000_000_03.png);  
+}
+
+.i-ren-nor-cfl {
+    background-image:
+        URL(assets/bustups/ren/b000_000_04.png);  
+}
+
+.i-ren-nor-sfl {
+    background-image:
+        URL(assets/bustups/ren/b000_000_05.png);  
+}
+
+.i-ren-nor-cwn {
+    background-image:
+        URL(assets/bustups/ren/b000_000_06.png);  
+}
+
+.i-ren-nor-cwe {
+    background-image:
+        URL(assets/bustups/ren/b000_000_07.png);
+}
+
+.i-ren-nor-new {
+    background-image:
+        URL(assets/bustups/ren/b000_000_08.png);
+}
+
+.i-ren-nor-xxn {
+    background-image:
+        URL(assets/bustups/ren/b000_000_09.png);
+}
+
+.i-ren-nor-xxu {
+    background-image:
+        URL(assets/bustups/ren/b000_000_10.png);
+}
+
+.i-ren-hap-csp {
+    background-image:
+        URL(assets/bustups/ren/b000_001_01.png);  
+}
+
+.i-ren-hap-ssp {
+    background-image:
+        URL(assets/bustups/ren/b000_001_02.png);  
+}
+
+.i-ren-hap-sum {
+    background-image:
+        URL(assets/bustups/ren/b000_001_03.png);  
+}
+
+.i-ren-hap-cfl {
+    background-image:
+        URL(assets/bustups/ren/b000_001_04.png);  
+}
+
+.i-ren-hap-sfl {
+    background-image:
+        URL(assets/bustups/ren/b000_001_05.png);  
+}
+
+.i-ren-hap-cwn {
+    background-image:
+        URL(assets/bustups/ren/b000_001_06.png);  
+}
+
+.i-ren-hap-cwe {
+    background-image:
+        URL(assets/bustups/ren/b000_001_07.png);
+}
+
+.i-ren-hap-new {
+    background-image:
+        URL(assets/bustups/ren/b000_001_08.png);
+}
+
+.i-ren-hap-xxn {
+    background-image:
+        URL(assets/bustups/ren/b000_001_09.png);
+}
+
+.i-ren-hap-xxu {
+    background-image:
+        URL(assets/bustups/ren/b000_001_10.png);
+}
+
+.i-ren-mad-csp {
+    background-image:
+        URL(assets/bustups/ren/b000_002_01.png);  
+}
+
+.i-ren-mad-ssp {
+    background-image:
+        URL(assets/bustups/ren/b000_002_02.png);  
+}
+
+.i-ren-mad-sum {
+    background-image:
+        URL(assets/bustups/ren/b000_002_03.png);  
+}
+
+.i-ren-mad-cfl {
+    background-image:
+        URL(assets/bustups/ren/b000_002_04.png);  
+}
+
+.i-ren-mad-sfl {
+    background-image:
+        URL(assets/bustups/ren/b000_002_05.png);  
+}
+
+.i-ren-mad-cwn {
+    background-image:
+        URL(assets/bustups/ren/b000_002_06.png);  
+}
+
+.i-ren-mad-cwe {
+    background-image:
+        URL(assets/bustups/ren/b000_002_07.png);
+}
+
+.i-ren-mad-new {
+    background-image:
+        URL(assets/bustups/ren/b000_002_08.png);
+}
+
+.i-ren-mad-xxn {
+    background-image:
+        URL(assets/bustups/ren/b000_002_09.png);
+}
+
+.i-ren-mad-xxu {
+    background-image:
+        URL(assets/bustups/ren/b000_002_10.png);
+}
+
+.i-ren-sad-csp {
+    background-image:
+        URL(assets/bustups/ren/b000_003_01.png);  
+}
+
+.i-ren-sad-ssp {
+    background-image:
+        URL(assets/bustups/ren/b000_003_02.png);  
+}
+
+.i-ren-sad-sum {
+    background-image:
+        URL(assets/bustups/ren/b000_003_03.png);  
+}
+
+.i-ren-sad-cfl {
+    background-image:
+        URL(assets/bustups/ren/b000_003_04.png);  
+}
+
+.i-ren-sad-sfl {
+    background-image:
+        URL(assets/bustups/ren/b000_003_05.png);  
+}
+
+.i-ren-sad-cwn {
+    background-image:
+        URL(assets/bustups/ren/b000_003_06.png);  
+}
+
+.i-ren-sad-cwe {
+    background-image:
+        URL(assets/bustups/ren/b000_003_07.png);
+}
+
+.i-ren-sad-new {
+    background-image:
+        URL(assets/bustups/ren/b000_003_08.png);
+}
+
+.i-ren-sad-xxn {
+    background-image:
+        URL(assets/bustups/ren/b000_003_09.png);
+}
+
+.i-ren-sad-xxu {
+    background-image:
+        URL(assets/bustups/ren/b000_003_10.png);
+}
+
+.i-ren-sur-csp {
+    background-image:
+        URL(assets/bustups/ren/b000_004_01.png);  
+}
+
+.i-ren-sur-ssp {
+    background-image:
+        URL(assets/bustups/ren/b000_004_02.png);  
+}
+
+.i-ren-sur-sum {
+    background-image:
+        URL(assets/bustups/ren/b000_004_03.png);  
+}
+
+.i-ren-sur-cfl {
+    background-image:
+        URL(assets/bustups/ren/b000_004_04.png);  
+}
+
+.i-ren-sur-sfl {
+    background-image:
+        URL(assets/bustups/ren/b000_004_05.png);  
+}
+
+.i-ren-sur-cwn {
+    background-image:
+        URL(assets/bustups/ren/b000_004_06.png);  
+}
+
+.i-ren-sur-cwe {
+    background-image:
+        URL(assets/bustups/ren/b000_004_07.png);
+}
+
+.i-ren-sur-new {
+    background-image:
+        URL(assets/bustups/ren/b000_004_08.png);
+}
+
+.i-ren-sur-xxn {
+    background-image:
+        URL(assets/bustups/ren/b000_004_09.png);
+}
+
+.i-ren-sur-xxu {
+    background-image:
+        URL(assets/bustups/ren/b000_004_10.png);
+}
+
+.i-ren-hur-csp {
+    background-image:
+        URL(assets/bustups/ren/b000_005_01.png);  
+}
+
+.i-ren-hur-ssp {
+    background-image:
+        URL(assets/bustups/ren/b000_005_02.png);  
+}
+
+.i-ren-hur-sum {
+    background-image:
+        URL(assets/bustups/ren/b000_005_03.png);  
+}
+
+.i-ren-hur-cfl {
+    background-image:
+        URL(assets/bustups/ren/b000_005_04.png);  
+}
+
+.i-ren-hur-sfl {
+    background-image:
+        URL(assets/bustups/ren/b000_005_05.png);  
+}
+
+.i-ren-hur-cwn {
+    background-image:
+        URL(assets/bustups/ren/b000_005_06.png);  
+}
+
+.i-ren-hur-cwe {
+    background-image:
+        URL(assets/bustups/ren/b000_005_07.png);
+}
+
+.i-ren-hur-new {
+    background-image:
+        URL(assets/bustups/ren/b000_005_08.png);
+}
+
+.i-ren-hur-xxn {
+    background-image:
+        URL(assets/bustups/ren/b000_005_09.png);
+}
+
+.i-ren-hur-xxu {
+    background-image:
+        URL(assets/bustups/ren/b000_005_10.png);
+}
+
+.i-ren-blu-csp {
+    background-image:
+        URL(assets/bustups/ren/b000_006_01.png);  
+}
+
+.i-ren-blu-ssp {
+    background-image:
+        URL(assets/bustups/ren/b000_006_02.png);  
+}
+
+.i-ren-blu-sum {
+    background-image:
+        URL(assets/bustups/ren/b000_006_03.png);  
+}
+
+.i-ren-blu-cfl {
+    background-image:
+        URL(assets/bustups/ren/b000_006_04.png);  
+}
+
+.i-ren-blu-sfl {
+    background-image:
+        URL(assets/bustups/ren/b000_006_05.png);  
+}
+
+.i-ren-blu-cwn {
+    background-image:
+        URL(assets/bustups/ren/b000_006_06.png);  
+}
+
+.i-ren-blu-cwe {
+    background-image:
+        URL(assets/bustups/ren/b000_006_07.png);
+}
+
+.i-ren-blu-new {
+    background-image:
+        URL(assets/bustups/ren/b000_006_08.png);
+}
+
+.i-ren-blu-xxn {
+    background-image:
+        URL(assets/bustups/ren/b000_006_09.png);
+}
+
+.i-ren-blu-xxu {
+    background-image:
+        URL(assets/bustups/ren/b000_006_10.png);
+}
+
+.i-ren-emb-csp {
+    background-image:
+        URL(assets/bustups/ren/b000_007_01.png);  
+}
+
+.i-ren-emb-ssp {
+    background-image:
+        URL(assets/bustups/ren/b000_007_02.png);  
+}
+
+.i-ren-emb-sum {
+    background-image:
+        URL(assets/bustups/ren/b000_007_03.png);  
+}
+
+.i-ren-emb-cfl {
+    background-image:
+        URL(assets/bustups/ren/b000_007_04.png);  
+}
+
+.i-ren-emb-sfl {
+    background-image:
+        URL(assets/bustups/ren/b000_007_05.png);  
+}
+
+.i-ren-emb-cwn {
+    background-image:
+        URL(assets/bustups/ren/b000_007_06.png);  
+}
+
+.i-ren-emb-cwe {
+    background-image:
+        URL(assets/bustups/ren/b000_007_07.png);
+}
+
+.i-ren-emb-new {
+    background-image:
+        URL(assets/bustups/ren/b000_007_08.png);
+}
+
+.i-ren-emb-xxn {
+    background-image:
+        URL(assets/bustups/ren/b000_007_09.png);
+}
+
+.i-ren-emb-xxu {
+    background-image:
+        URL(assets/bustups/ren/b000_007_10.png);
+}
+
+.i-ren-008-csp {
+    background-image:
+        URL(assets/bustups/ren/b000_008_01.png);  
+}
+
+.i-ren-008-ssp {
+    background-image:
+        URL(assets/bustups/ren/b000_008_02.png);  
+}
+
+.i-ren-008-sum {
+    background-image:
+        URL(assets/bustups/ren/b000_008_03.png);  
+}
+
+.i-ren-008-cfl {
+    background-image:
+        URL(assets/bustups/ren/b000_008_04.png);  
+}
+
+.i-ren-008-sfl {
+    background-image:
+        URL(assets/bustups/ren/b000_008_05.png);  
+}
+
+.i-ren-008-cwn {
+    background-image:
+        URL(assets/bustups/ren/b000_008_06.png);  
+}
+
+.i-ren-008-cwe {
+    background-image:
+        URL(assets/bustups/ren/b000_008_07.png);
+}
+
+.i-ren-008-new {
+    background-image:
+        URL(assets/bustups/ren/b000_008_08.png);
+}
+
+.i-ren-008-xxn {
+    background-image:
+        URL(assets/bustups/ren/b000_008_09.png);
+}
+
+.i-ren-008-xxu {
+    background-image:
+        URL(assets/bustups/ren/b000_008_10.png);
+}
+
+.i-ren-009-csp {
+    background-image:
+        URL(assets/bustups/ren/b000_009_01.png);  
+}
+
+.i-ren-009-ssp {
+    background-image:
+        URL(assets/bustups/ren/b000_009_02.png);  
+}
+
+.i-ren-009-sum {
+    background-image:
+        URL(assets/bustups/ren/b000_009_03.png);  
+}
+
+.i-ren-009-cfl {
+    background-image:
+        URL(assets/bustups/ren/b000_009_04.png);  
+}
+
+.i-ren-009-sfl {
+    background-image:
+        URL(assets/bustups/ren/b000_009_05.png);  
+}
+
+.i-ren-009-cwn {
+    background-image:
+        URL(assets/bustups/ren/b000_009_06.png);  
+}
+
+.i-ren-009-cwe {
+    background-image:
+        URL(assets/bustups/ren/b000_009_07.png);
+}
+
+.i-ren-009-new {
+    background-image:
+        URL(assets/bustups/ren/b000_009_08.png);
+}
+
+.i-ren-009-xxn {
+    background-image:
+        URL(assets/bustups/ren/b000_009_09.png);
+}
+
+.i-ren-009-xxu {
+    background-image:
+        URL(assets/bustups/ren/b000_009_10.png);
+}
+
+.i-ryu-nor-csp {
+    background-image:
+        URL(assets/bustups/ryu/b002_000_01.png);  
+}
+
+.i-ryu-nor-ssp {
+    background-image:
+        URL(assets/bustups/ryu/b002_000_02.png);  
+}
+
+.i-ryu-nor-sum {
+    background-image:
+        URL(assets/bustups/ryu/b002_000_03.png);  
+}
+
+.i-ryu-nor-cfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_000_04.png);  
+}
+
+.i-ryu-nor-sfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_000_05.png);  
+}
+
+.i-ryu-nor-cwn {
+    background-image:
+        URL(assets/bustups/ryu/b002_000_06.png);  
+}
+
+.i-ryu-nor-cwe {
+    background-image:
+        URL(assets/bustups/ryu/b002_000_07.png);
+}
+
+.i-ryu-nor-new {
+    background-image:
+        URL(assets/bustups/ryu/b002_000_08.png);
+}
+
+.i-ryu-nor-xxn {
+    background-image:
+        URL(assets/bustups/ryu/b002_000_09.png);
+}
+
+.i-ryu-nor-xxu {
+    background-image:
+        URL(assets/bustups/ryu/b002_000_10.png);
+}
+
+.i-ryu-hap-csp {
+    background-image:
+        URL(assets/bustups/ryu/b002_001_01.png);  
+}
+
+.i-ryu-hap-ssp {
+    background-image:
+        URL(assets/bustups/ryu/b002_001_02.png);  
+}
+
+.i-ryu-hap-sum {
+    background-image:
+        URL(assets/bustups/ryu/b002_001_03.png);  
+}
+
+.i-ryu-hap-cfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_001_04.png);  
+}
+
+.i-ryu-hap-sfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_001_05.png);  
+}
+
+.i-ryu-hap-cwn {
+    background-image:
+        URL(assets/bustups/ryu/b002_001_06.png);  
+}
+
+.i-ryu-hap-cwe {
+    background-image:
+        URL(assets/bustups/ryu/b002_001_07.png);
+}
+
+.i-ryu-hap-new {
+    background-image:
+        URL(assets/bustups/ryu/b002_001_08.png);
+}
+
+.i-ryu-hap-xxn {
+    background-image:
+        URL(assets/bustups/ryu/b002_001_09.png);
+}
+
+.i-ryu-hap-xxu {
+    background-image:
+        URL(assets/bustups/ryu/b002_001_10.png);
+}
+
+.i-ryu-mad-csp {
+    background-image:
+        URL(assets/bustups/ryu/b002_002_01.png);  
+}
+
+.i-ryu-mad-ssp {
+    background-image:
+        URL(assets/bustups/ryu/b002_002_02.png);  
+}
+
+.i-ryu-mad-sum {
+    background-image:
+        URL(assets/bustups/ryu/b002_002_03.png);  
+}
+
+.i-ryu-mad-cfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_002_04.png);  
+}
+
+.i-ryu-mad-sfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_002_05.png);  
+}
+
+.i-ryu-mad-cwn {
+    background-image:
+        URL(assets/bustups/ryu/b002_002_06.png);  
+}
+
+.i-ryu-mad-cwe {
+    background-image:
+        URL(assets/bustups/ryu/b002_002_07.png);
+}
+
+.i-ryu-mad-new {
+    background-image:
+        URL(assets/bustups/ryu/b002_002_08.png);
+}
+
+.i-ryu-mad-xxn {
+    background-image:
+        URL(assets/bustups/ryu/b002_002_09.png);
+}
+
+.i-ryu-mad-xxu {
+    background-image:
+        URL(assets/bustups/ryu/b002_002_10.png);
+}
+
+.i-ryu-sad-csp {
+    background-image:
+        URL(assets/bustups/ryu/b002_003_01.png);  
+}
+
+.i-ryu-sad-ssp {
+    background-image:
+        URL(assets/bustups/ryu/b002_003_02.png);  
+}
+
+.i-ryu-sad-sum {
+    background-image:
+        URL(assets/bustups/ryu/b002_003_03.png);  
+}
+
+.i-ryu-sad-cfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_003_04.png);  
+}
+
+.i-ryu-sad-sfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_003_05.png);  
+}
+
+.i-ryu-sad-cwn {
+    background-image:
+        URL(assets/bustups/ryu/b002_003_06.png);  
+}
+
+.i-ryu-sad-cwe {
+    background-image:
+        URL(assets/bustups/ryu/b002_003_07.png);
+}
+
+.i-ryu-sad-new {
+    background-image:
+        URL(assets/bustups/ryu/b002_003_08.png);
+}
+
+.i-ryu-sad-xxn {
+    background-image:
+        URL(assets/bustups/ryu/b002_003_09.png);
+}
+
+.i-ryu-sad-xxu {
+    background-image:
+        URL(assets/bustups/ryu/b002_003_10.png);
+}
+
+.i-ryu-sur-csp {
+    background-image:
+        URL(assets/bustups/ryu/b002_004_01.png);  
+}
+
+.i-ryu-sur-ssp {
+    background-image:
+        URL(assets/bustups/ryu/b002_004_02.png);  
+}
+
+.i-ryu-sur-sum {
+    background-image:
+        URL(assets/bustups/ryu/b002_004_03.png);  
+}
+
+.i-ryu-sur-cfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_004_04.png);  
+}
+
+.i-ryu-sur-sfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_004_05.png);  
+}
+
+.i-ryu-sur-cwn {
+    background-image:
+        URL(assets/bustups/ryu/b002_004_06.png);  
+}
+
+.i-ryu-sur-cwe {
+    background-image:
+        URL(assets/bustups/ryu/b002_004_07.png);
+}
+
+.i-ryu-sur-new {
+    background-image:
+        URL(assets/bustups/ryu/b002_004_08.png);
+}
+
+.i-ryu-sur-xxn {
+    background-image:
+        URL(assets/bustups/ryu/b002_004_09.png);
+}
+
+.i-ryu-sur-xxu {
+    background-image:
+        URL(assets/bustups/ryu/b002_004_10.png);
+}
+
+.i-ryu-hur-csp {
+    background-image:
+        URL(assets/bustups/ryu/b002_005_01.png);  
+}
+
+.i-ryu-hur-ssp {
+    background-image:
+        URL(assets/bustups/ryu/b002_005_02.png);  
+}
+
+.i-ryu-hur-sum {
+    background-image:
+        URL(assets/bustups/ryu/b002_005_03.png);  
+}
+
+.i-ryu-hur-cfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_005_04.png);  
+}
+
+.i-ryu-hur-sfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_005_05.png);  
+}
+
+.i-ryu-hur-cwn {
+    background-image:
+        URL(assets/bustups/ryu/b002_005_06.png);  
+}
+
+.i-ryu-hur-cwe {
+    background-image:
+        URL(assets/bustups/ryu/b002_005_07.png);
+}
+
+.i-ryu-hur-new {
+    background-image:
+        URL(assets/bustups/ryu/b002_005_08.png);
+}
+
+.i-ryu-hur-xxn {
+    background-image:
+        URL(assets/bustups/ryu/b002_005_09.png);
+}
+
+.i-ryu-hur-xxu {
+    background-image:
+        URL(assets/bustups/ryu/b002_005_10.png);
+}
+
+.i-ryu-blu-csp {
+    background-image:
+        URL(assets/bustups/ryu/b002_006_01.png);  
+}
+
+.i-ryu-blu-ssp {
+    background-image:
+        URL(assets/bustups/ryu/b002_006_02.png);  
+}
+
+.i-ryu-blu-sum {
+    background-image:
+        URL(assets/bustups/ryu/b002_006_03.png);  
+}
+
+.i-ryu-blu-cfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_006_04.png);  
+}
+
+.i-ryu-blu-sfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_006_05.png);  
+}
+
+.i-ryu-blu-cwn {
+    background-image:
+        URL(assets/bustups/ryu/b002_006_06.png);  
+}
+
+.i-ryu-blu-cwe {
+    background-image:
+        URL(assets/bustups/ryu/b002_006_07.png);
+}
+
+.i-ryu-blu-new {
+    background-image:
+        URL(assets/bustups/ryu/b002_006_08.png);
+}
+
+.i-ryu-blu-xxn {
+    background-image:
+        URL(assets/bustups/ryu/b002_006_09.png);
+}
+
+.i-ryu-blu-xxu {
+    background-image:
+        URL(assets/bustups/ryu/b002_006_10.png);
+}
+
+.i-ryu-emb-csp {
+    background-image:
+        URL(assets/bustups/ryu/b002_007_01.png);  
+}
+
+.i-ryu-emb-ssp {
+    background-image:
+        URL(assets/bustups/ryu/b002_007_02.png);  
+}
+
+.i-ryu-emb-sum {
+    background-image:
+        URL(assets/bustups/ryu/b002_007_03.png);  
+}
+
+.i-ryu-emb-cfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_007_04.png);  
+}
+
+.i-ryu-emb-sfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_007_05.png);  
+}
+
+.i-ryu-emb-cwn {
+    background-image:
+        URL(assets/bustups/ryu/b002_007_06.png);  
+}
+
+.i-ryu-emb-cwe {
+    background-image:
+        URL(assets/bustups/ryu/b002_007_07.png);
+}
+
+.i-ryu-emb-new {
+    background-image:
+        URL(assets/bustups/ryu/b002_007_08.png);
+}
+
+.i-ryu-emb-xxn {
+    background-image:
+        URL(assets/bustups/ryu/b002_007_09.png);
+}
+
+.i-ryu-emb-xxu {
+    background-image:
+        URL(assets/bustups/ryu/b002_007_10.png);
+}
+
+.i-ryu-008-csp {
+    background-image:
+        URL(assets/bustups/ryu/b002_008_01.png);  
+}
+
+.i-ryu-008-ssp {
+    background-image:
+        URL(assets/bustups/ryu/b002_008_02.png);  
+}
+
+.i-ryu-008-sum {
+    background-image:
+        URL(assets/bustups/ryu/b002_008_03.png);  
+}
+
+.i-ryu-008-cfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_008_04.png);  
+}
+
+.i-ryu-008-sfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_008_05.png);  
+}
+
+.i-ryu-008-cwn {
+    background-image:
+        URL(assets/bustups/ryu/b002_008_06.png);  
+}
+
+.i-ryu-008-cwe {
+    background-image:
+        URL(assets/bustups/ryu/b002_008_07.png);
+}
+
+.i-ryu-008-new {
+    background-image:
+        URL(assets/bustups/ryu/b002_008_08.png);
+}
+
+.i-ryu-008-xxn {
+    background-image:
+        URL(assets/bustups/ryu/b002_008_09.png);
+}
+
+.i-ryu-008-xxu {
+    background-image:
+        URL(assets/bustups/ryu/b002_008_10.png);
+}
+
+.i-ryu-009-csp {
+    background-image:
+        URL(assets/bustups/ryu/b002_009_01.png);  
+}
+
+.i-ryu-009-ssp {
+    background-image:
+        URL(assets/bustups/ryu/b002_009_02.png);  
+}
+
+.i-ryu-009-sum {
+    background-image:
+        URL(assets/bustups/ryu/b002_009_03.png);  
+}
+
+.i-ryu-009-cfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_009_04.png);  
+}
+
+.i-ryu-009-sfl {
+    background-image:
+        URL(assets/bustups/ryu/b002_009_05.png);  
+}
+
+.i-ryu-009-cwn {
+    background-image:
+        URL(assets/bustups/ryu/b002_009_06.png);  
+}
+
+.i-ryu-009-cwe {
+    background-image:
+        URL(assets/bustups/ryu/b002_009_07.png);
+}
+
+.i-ryu-009-new {
+    background-image:
+        URL(assets/bustups/ryu/b002_009_08.png);
+}
+
+.i-ryu-009-xxn {
+    background-image:
+        URL(assets/bustups/ryu/b002_009_09.png);
+}
+
+.i-ryu-009-xxu {
+    background-image:
+        URL(assets/bustups/ryu/b002_009_10.png);
+}
+
+.i-ann-nor-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_000_01.png);  
+}
+
+.i-ann-nor-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_000_02.png);  
+}
+
+.i-ann-nor-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_000_03.png);  
+}
+
+.i-ann-nor-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_000_04.png);  
+}
+
+.i-ann-nor-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_000_05.png);  
+}   
+
+.i-ann-nor-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_000_06.png);  
+}
+
+.i-ann-nor-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_000_07.png);
+}
+
+.i-ann-nor-new {
+    background-image:
+        URL(assets/bustups/ann/b004_000_08.png);
+}
+
+.i-ann-nor-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_000_09.png);
+}
+
+.i-ann-nor-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_000_10.png);
+}
+
+.i-ann-hap-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_001_01.png);  
+}
+
+.i-ann-hap-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_001_02.png);  
+}
+
+.i-ann-hap-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_001_03.png);  
+}
+
+.i-ann-hap-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_001_04.png);  
+}
+
+.i-ann-hap-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_001_05.png);  
+}
+
+.i-ann-hap-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_001_06.png);  
+}
+
+.i-ann-hap-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_001_07.png);
+}
+
+.i-ann-hap-new {
+    background-image:
+        URL(assets/bustups/ann/b004_001_08.png);
+}
+
+.i-ann-hap-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_001_09.png);
+}
+
+.i-ann-hap-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_001_10.png);
+}
+
+.i-ann-mad-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_002_01.png);  
+}
+
+.i-ann-mad-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_002_02.png);  
+}
+
+.i-ann-mad-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_002_03.png);  
+}
+
+.i-ann-mad-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_002_04.png);  
+}
+
+.i-ann-mad-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_002_05.png);  
+}
+
+.i-ann-mad-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_002_06.png);  
+}
+
+.i-ann-mad-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_002_07.png);
+}
+
+.i-ann-mad-new {
+    background-image:
+        URL(assets/bustups/ann/b004_002_08.png);
+}
+
+.i-ann-mad-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_002_09.png);
+}
+
+.i-ann-mad-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_002_10.png);
+}
+
+.i-ann-sad-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_003_01.png);  
+}
+
+.i-ann-sad-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_003_02.png);  
+}
+
+.i-ann-sad-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_003_03.png);  
+}
+
+.i-ann-sad-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_003_04.png);  
+}
+
+.i-ann-sad-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_003_05.png);  
+}
+
+.i-ann-sad-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_003_06.png);  
+}
+
+.i-ann-sad-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_003_07.png);
+}
+
+.i-ann-sad-new {
+    background-image:
+        URL(assets/bustups/ann/b004_003_08.png);
+}
+
+.i-ann-sad-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_003_09.png);
+}
+
+.i-ann-sad-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_003_10.png);
+}
+
+.i-ann-sur-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_004_01.png);  
+}
+
+.i-ann-sur-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_004_02.png);  
+}
+
+.i-ann-sur-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_004_03.png);  
+}
+
+.i-ann-sur-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_004_04.png);  
+}
+
+.i-ann-sur-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_004_05.png);  
+}
+
+.i-ann-sur-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_004_06.png);  
+}
+
+.i-ann-sur-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_004_07.png);
+}
+
+.i-ann-sur-new {
+    background-image:
+        URL(assets/bustups/ann/b004_004_08.png);
+}
+
+.i-ann-sur-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_004_09.png);
+}
+
+.i-ann-sur-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_004_10.png);
+}
+
+.i-ann-hur-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_005_01.png);  
+}
+
+.i-ann-hur-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_005_02.png);  
+}
+
+.i-ann-hur-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_005_03.png);  
+}
+
+.i-ann-hur-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_005_04.png);  
+}
+
+.i-ann-hur-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_005_05.png);  
+}
+
+.i-ann-hur-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_005_06.png);  
+}
+
+.i-ann-hur-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_005_07.png);
+}
+
+.i-ann-hur-new {
+    background-image:
+        URL(assets/bustups/ann/b004_005_08.png);
+}
+
+.i-ann-hur-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_005_09.png);
+}
+
+.i-ann-hur-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_005_10.png);
+}
+
+.i-ann-blu-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_006_01.png);  
+}
+
+.i-ann-blu-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_006_02.png);  
+}
+
+.i-ann-blu-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_006_03.png);  
+}
+
+.i-ann-blu-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_006_04.png);  
+}
+
+.i-ann-blu-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_006_05.png);  
+}
+
+.i-ann-blu-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_006_06.png);  
+}
+
+.i-ann-blu-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_006_07.png);
+}
+
+.i-ann-blu-new {
+    background-image:
+        URL(assets/bustups/ann/b004_006_08.png);
+}
+
+.i-ann-blu-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_006_09.png);
+}
+
+.i-ann-blu-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_006_10.png);
+}
+
+.i-ann-emb-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_007_01.png);  
+}
+
+.i-ann-emb-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_007_02.png);  
+}
+
+.i-ann-emb-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_007_03.png);  
+}
+
+.i-ann-emb-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_007_04.png);  
+}
+
+.i-ann-emb-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_007_05.png);  
+}
+
+.i-ann-emb-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_007_06.png);  
+}
+
+.i-ann-emb-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_007_07.png);
+}
+
+.i-ann-emb-new {
+    background-image:
+        URL(assets/bustups/ann/b004_007_08.png);
+}
+
+.i-ann-emb-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_007_09.png);
+}
+
+.i-ann-emb-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_007_10.png);
+}
+
+.i-ann-008-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_008_01.png);  
+}
+
+.i-ann-008-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_008_02.png);  
+}
+
+.i-ann-008-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_008_03.png);  
+}
+
+.i-ann-008-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_008_04.png);  
+}
+
+.i-ann-008-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_008_05.png);  
+}
+
+.i-ann-008-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_008_06.png);  
+}
+
+.i-ann-008-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_008_07.png);
+}
+
+.i-ann-008-new {
+    background-image:
+        URL(assets/bustups/ann/b004_008_08.png);
+}
+
+.i-ann-008-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_008_09.png);
+}
+
+.i-ann-008-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_008_10.png);
+}
+
+.i-ann-009-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_009_01.png);  
+}
+
+.i-ann-009-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_009_02.png);  
+}
+
+.i-ann-009-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_009_03.png);  
+}
+
+.i-ann-009-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_009_04.png);  
+}
+
+.i-ann-009-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_009_05.png);  
+}
+
+.i-ann-009-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_009_06.png);  
+}
+
+.i-ann-009-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_009_07.png);
+}
+
+.i-ann-009-new {
+    background-image:
+        URL(assets/bustups/ann/b004_009_08.png);
+}
+
+.i-ann-009-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_009_09.png);
+}
+
+.i-ann-009-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_009_10.png);
+}
+
+.i-ann-scr-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_010_01.png);  
+}
+
+.i-ann-scr-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_010_02.png);  
+}
+
+.i-ann-scr-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_010_03.png);  
+}
+
+.i-ann-scr-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_010_04.png);  
+}
+
+.i-ann-scr-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_010_05.png);  
+}
+
+.i-ann-scr-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_010_06.png);  
+}
+
+.i-ann-scr-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_010_07.png);
+}
+
+.i-ann-scr-new {
+    background-image:
+        URL(assets/bustups/ann/b004_010_08.png);
+}
+
+.i-ann-scr-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_010_09.png);
+}
+
+.i-ann-scr-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_010_10.png);
+}
+
+.i-ann-hcr-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_011_01.png);  
+}
+
+.i-ann-hcr-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_011_02.png);  
+}
+
+.i-ann-hcr-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_011_03.png);  
+}
+
+.i-ann-hcr-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_011_04.png);  
+}
+
+.i-ann-hcr-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_011_05.png);  
+}
+
+.i-ann-hcr-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_011_06.png);  
+}
+
+.i-ann-hcr-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_011_07.png);
+}
+
+.i-ann-hcr-new {
+    background-image:
+        URL(assets/bustups/ann/b004_011_08.png);
+}
+
+.i-ann-hcr-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_011_09.png);
+}
+
+.i-ann-hcr-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_011_10.png);
+}
+
+.i-ann-hp2-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_012_01.png);  
+}
+
+.i-ann-hp2-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_012_02.png);  
+}
+
+.i-ann-hp2-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_012_03.png);  
+}
+
+.i-ann-hp2-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_012_04.png);  
+}
+
+.i-ann-hp2-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_012_05.png);  
+}
+
+.i-ann-hp2-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_012_06.png);  
+}
+
+.i-ann-hp2-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_012_07.png);
+}
+
+.i-ann-hp2-new {
+    background-image:
+        URL(assets/bustups/ann/b004_012_08.png);
+}
+
+.i-ann-hp2-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_012_09.png);
+}
+
+.i-ann-hp2-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_012_10.png);
+}
+
+.i-ann-md2-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_013_01.png);  
+}
+
+.i-ann-md2-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_013_02.png);  
+}
+
+.i-ann-md2-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_013_03.png);  
+}
+
+.i-ann-md2-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_013_04.png);  
+}
+
+.i-ann-md2-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_013_05.png);  
+}
+
+.i-ann-md2-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_013_06.png);  
+}
+
+.i-ann-md2-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_013_07.png);
+}
+
+.i-ann-md2-new {
+    background-image:
+        URL(assets/bustups/ann/b004_013_08.png);
+}
+
+.i-ann-md2-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_013_09.png);
+}
+
+.i-ann-md2-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_013_10.png);
+}
+
+.i-ann-sr2-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_014_01.png);  
+}
+
+.i-ann-sr2-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_014_02.png);  
+}
+
+.i-ann-sr2-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_014_03.png);  
+}
+
+.i-ann-sr2-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_014_04.png);  
+}
+
+.i-ann-sr2-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_014_05.png);  
+}
+
+.i-ann-sr2-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_014_06.png);  
+}
+
+.i-ann-sr2-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_014_07.png);
+}
+
+.i-ann-sr2-new {
+    background-image:
+        URL(assets/bustups/ann/b004_014_08.png);
+}
+
+.i-ann-sr2-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_014_09.png);
+}
+
+.i-ann-sr2-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_014_10.png);
+}
+
+.i-ann-hr2-csp {
+    background-image:
+        URL(assets/bustups/ann/b004_015_01.png);  
+}
+
+.i-ann-hr2-ssp {
+    background-image:
+        URL(assets/bustups/ann/b004_015_02.png);  
+}
+
+.i-ann-hr2-sum {
+    background-image:
+        URL(assets/bustups/ann/b004_015_03.png);  
+}
+
+.i-ann-hr2-cfl {
+    background-image:
+        URL(assets/bustups/ann/b004_015_04.png);  
+}
+
+.i-ann-hr2-sfl {
+    background-image:
+        URL(assets/bustups/ann/b004_015_05.png);  
+}
+
+.i-ann-hr2-cwn {
+    background-image:
+        URL(assets/bustups/ann/b004_015_06.png);  
+}
+
+.i-ann-hr2-cwe {
+    background-image:
+        URL(assets/bustups/ann/b004_015_07.png);
+}
+
+.i-ann-hr2-new {
+    background-image:
+        URL(assets/bustups/ann/b004_015_08.png);
+}
+
+.i-ann-hr2-xxn {
+    background-image:
+        URL(assets/bustups/ann/b004_015_09.png);
+}
+
+.i-ann-hr2-xxu {
+    background-image:
+        URL(assets/bustups/ann/b004_015_10.png);
+}
+
+.i-yus-nor-csp {
+    background-image:
+        URL(assets/bustups/yus/b005_000_01.png);  
+}
+
+.i-yus-nor-ssp {
+    background-image:
+        URL(assets/bustups/yus/b005_000_02.png);  
+}
+
+.i-yus-nor-sum {
+    background-image:
+        URL(assets/bustups/yus/b005_000_03.png);  
+}
+
+.i-yus-nor-cfl {
+    background-image:
+        URL(assets/bustups/yus/b005_000_04.png);  
+}
+
+.i-yus-nor-sfl {
+    background-image:
+        URL(assets/bustups/yus/b005_000_05.png);  
+}
+
+.i-yus-nor-cwn {
+    background-image:
+        URL(assets/bustups/yus/b005_000_06.png);  
+}
+
+.i-yus-nor-cwe {
+    background-image:
+        URL(assets/bustups/yus/b005_000_07.png);
+}
+
+.i-yus-nor-new {
+    background-image:
+        URL(assets/bustups/yus/b005_000_08.png);
+}
+
+.i-yus-nor-xxn {
+    background-image:
+        URL(assets/bustups/yus/b005_000_09.png);
+}
+
+.i-yus-nor-xxu {
+    background-image:
+        URL(assets/bustups/yus/b005_000_10.png);
+}
+
+.i-yus-hap-csp {
+    background-image:
+        URL(assets/bustups/yus/b005_001_01.png);  
+}
+
+.i-yus-hap-ssp {
+    background-image:
+        URL(assets/bustups/yus/b005_001_02.png);  
+}
+
+.i-yus-hap-sum {
+    background-image:
+        URL(assets/bustups/yus/b005_001_03.png);  
+}
+
+.i-yus-hap-cfl {
+    background-image:
+        URL(assets/bustups/yus/b005_001_04.png);  
+}
+
+.i-yus-hap-sfl {
+    background-image:
+        URL(assets/bustups/yus/b005_001_05.png);  
+}
+
+.i-yus-hap-cwn {
+    background-image:
+        URL(assets/bustups/yus/b005_001_06.png);  
+}
+
+.i-yus-hap-cwe {
+    background-image:
+        URL(assets/bustups/yus/b005_001_07.png);
+}
+
+.i-yus-hap-new {
+    background-image:
+        URL(assets/bustups/yus/b005_001_08.png);
+}
+
+.i-yus-hap-xxn {
+    background-image:
+        URL(assets/bustups/yus/b005_001_09.png);
+}
+
+.i-yus-hap-xxu {
+    background-image:
+        URL(assets/bustups/yus/b005_001_10.png);
+}
+
+.i-yus-mad-csp {
+    background-image:
+        URL(assets/bustups/yus/b005_002_01.png);  
+}
+
+.i-yus-mad-ssp {
+    background-image:
+        URL(assets/bustups/yus/b005_002_02.png);  
+}
+
+.i-yus-mad-sum {
+    background-image:
+        URL(assets/bustups/yus/b005_002_03.png);  
+}
+
+.i-yus-mad-cfl {
+    background-image:
+        URL(assets/bustups/yus/b005_002_04.png);  
+}
+
+.i-yus-mad-sfl {
+    background-image:
+        URL(assets/bustups/yus/b005_002_05.png);  
+}
+
+.i-yus-mad-cwn {
+    background-image:
+        URL(assets/bustups/yus/b005_002_06.png);  
+}
+
+.i-yus-mad-cwe {
+    background-image:
+        URL(assets/bustups/yus/b005_002_07.png);
+}
+
+.i-yus-mad-new {
+    background-image:
+        URL(assets/bustups/yus/b005_002_08.png);
+}
+
+.i-yus-mad-xxn {
+    background-image:
+        URL(assets/bustups/yus/b005_002_09.png);
+}
+
+.i-yus-mad-xxu {
+    background-image:
+        URL(assets/bustups/yus/b005_002_10.png);
+}
+
+.i-yus-sad-csp {
+    background-image:
+        URL(assets/bustups/yus/b005_003_01.png);  
+}
+
+.i-yus-sad-ssp {
+    background-image:
+        URL(assets/bustups/yus/b005_003_02.png);  
+}
+
+.i-yus-sad-sum {
+    background-image:
+        URL(assets/bustups/yus/b005_003_03.png);  
+}
+
+.i-yus-sad-cfl {
+    background-image:
+        URL(assets/bustups/yus/b005_003_04.png);  
+}
+
+.i-yus-sad-sfl {
+    background-image:
+        URL(assets/bustups/yus/b005_003_05.png);  
+}
+
+.i-yus-sad-cwn {
+    background-image:
+        URL(assets/bustups/yus/b005_003_06.png);  
+}
+
+.i-yus-sad-cwe {
+    background-image:
+        URL(assets/bustups/yus/b005_003_07.png);
+}
+
+.i-yus-sad-new {
+    background-image:
+        URL(assets/bustups/yus/b005_003_08.png);
+}
+
+.i-yus-sad-xxn {
+    background-image:
+        URL(assets/bustups/yus/b005_003_09.png);
+}
+
+.i-yus-sad-xxu {
+    background-image:
+        URL(assets/bustups/yus/b005_003_10.png);
+}
+
+.i-yus-sur-csp {
+    background-image:
+        URL(assets/bustups/yus/b005_004_01.png);  
+}
+
+.i-yus-sur-ssp {
+    background-image:
+        URL(assets/bustups/yus/b005_004_02.png);  
+}
+
+.i-yus-sur-sum {
+    background-image:
+        URL(assets/bustups/yus/b005_004_03.png);  
+}
+
+.i-yus-sur-cfl {
+    background-image:
+        URL(assets/bustups/yus/b005_004_04.png);  
+}
+
+.i-yus-sur-sfl {
+    background-image:
+        URL(assets/bustups/yus/b005_004_05.png);  
+}
+
+.i-yus-sur-cwn {
+    background-image:
+        URL(assets/bustups/yus/b005_004_06.png);  
+}
+
+.i-yus-sur-cwe {
+    background-image:
+        URL(assets/bustups/yus/b005_004_07.png);
+}
+
+.i-yus-sur-new {
+    background-image:
+        URL(assets/bustups/yus/b005_004_08.png);
+}
+
+.i-yus-sur-xxn {
+    background-image:
+        URL(assets/bustups/yus/b005_004_09.png);
+}
+
+.i-yus-sur-xxu {
+    background-image:
+        URL(assets/bustups/yus/b005_004_10.png);
+}
+
+.i-yus-hur-csp {
+    background-image:
+        URL(assets/bustups/yus/b005_005_01.png);  
+}
+
+.i-yus-hur-ssp {
+    background-image:
+        URL(assets/bustups/yus/b005_005_02.png);  
+}
+
+.i-yus-hur-sum {
+    background-image:
+        URL(assets/bustups/yus/b005_005_03.png);  
+}
+
+.i-yus-hur-cfl {
+    background-image:
+        URL(assets/bustups/yus/b005_005_04.png);  
+}
+
+.i-yus-hur-sfl {
+    background-image:
+        URL(assets/bustups/yus/b005_005_05.png);  
+}
+
+.i-yus-hur-cwn {
+    background-image:
+        URL(assets/bustups/yus/b005_005_06.png);  
+}
+
+.i-yus-hur-cwe {
+    background-image:
+        URL(assets/bustups/yus/b005_005_07.png);
+}
+
+.i-yus-hur-new {
+    background-image:
+        URL(assets/bustups/yus/b005_005_08.png);
+}
+
+.i-yus-hur-xxn {
+    background-image:
+        URL(assets/bustups/yus/b005_005_09.png);
+}
+
+.i-yus-hur-xxu {
+    background-image:
+        URL(assets/bustups/yus/b005_005_10.png);
+}
+
+.i-yus-blu-csp {
+    background-image:
+        URL(assets/bustups/yus/b005_006_01.png);  
+}
+
+.i-yus-blu-ssp {
+    background-image:
+        URL(assets/bustups/yus/b005_006_02.png);  
+}
+
+.i-yus-blu-sum {
+    background-image:
+        URL(assets/bustups/yus/b005_006_03.png);  
+}
+
+.i-yus-blu-cfl {
+    background-image:
+        URL(assets/bustups/yus/b005_006_04.png);  
+}
+
+.i-yus-blu-sfl {
+    background-image:
+        URL(assets/bustups/yus/b005_006_05.png);  
+}
+
+.i-yus-blu-cwn {
+    background-image:
+        URL(assets/bustups/yus/b005_006_06.png);  
+}
+
+.i-yus-blu-cwe {
+    background-image:
+        URL(assets/bustups/yus/b005_006_07.png);
+}
+
+.i-yus-blu-new {
+    background-image:
+        URL(assets/bustups/yus/b005_006_08.png);
+}
+
+.i-yus-blu-xxn {
+    background-image:
+        URL(assets/bustups/yus/b005_006_09.png);
+}
+
+.i-yus-blu-xxu {
+    background-image:
+        URL(assets/bustups/yus/b005_006_10.png);
+}
+
+.i-yus-emb-csp {
+    background-image:
+        URL(assets/bustups/yus/b005_007_01.png);  
+}
+
+.i-yus-emb-ssp {
+    background-image:
+        URL(assets/bustups/yus/b005_007_02.png);  
+}
+
+.i-yus-emb-sum {
+    background-image:
+        URL(assets/bustups/yus/b005_007_03.png);  
+}
+
+.i-yus-emb-cfl {
+    background-image:
+        URL(assets/bustups/yus/b005_007_04.png);  
+}
+
+.i-yus-emb-sfl {
+    background-image:
+        URL(assets/bustups/yus/b005_007_05.png);  
+}
+
+.i-yus-emb-cwn {
+    background-image:
+        URL(assets/bustups/yus/b005_007_06.png);  
+}
+
+.i-yus-emb-cwe {
+    background-image:
+        URL(assets/bustups/yus/b005_007_07.png);
+}
+
+.i-yus-emb-new {
+    background-image:
+        URL(assets/bustups/yus/b005_007_08.png);
+}
+
+.i-yus-emb-xxn {
+    background-image:
+        URL(assets/bustups/yus/b005_007_09.png);
+}
+
+.i-yus-emb-xxu {
+    background-image:
+        URL(assets/bustups/yus/b005_007_10.png);
+}
+
+.i-yus-008-csp {
+    background-image:
+        URL(assets/bustups/yus/b005_008_01.png);  
+}
+
+.i-yus-008-ssp {
+    background-image:
+        URL(assets/bustups/yus/b005_008_02.png);  
+}
+
+.i-yus-008-sum {
+    background-image:
+        URL(assets/bustups/yus/b005_008_03.png);  
+}
+
+.i-yus-008-cfl {
+    background-image:
+        URL(assets/bustups/yus/b005_008_04.png);  
+}
+
+.i-yus-008-sfl {
+    background-image:
+        URL(assets/bustups/yus/b005_008_05.png);  
+}
+
+.i-yus-008-cwn {
+    background-image:
+        URL(assets/bustups/yus/b005_008_06.png);  
+}
+
+.i-yus-008-cwe {
+    background-image:
+        URL(assets/bustups/yus/b005_008_07.png);
+}
+
+.i-yus-008-new {
+    background-image:
+        URL(assets/bustups/yus/b005_008_08.png);
+}
+
+.i-yus-008-xxn {
+    background-image:
+        URL(assets/bustups/yus/b005_008_09.png);
+}
+
+.i-yus-008-xxu {
+    background-image:
+        URL(assets/bustups/yus/b005_008_10.png);
+}
+
+.i-yus-009-csp {
+    background-image:
+        URL(assets/bustups/yus/b005_009_01.png);  
+}
+
+.i-yus-009-ssp {
+    background-image:
+        URL(assets/bustups/yus/b005_009_02.png);  
+}
+
+.i-yus-009-sum {
+    background-image:
+        URL(assets/bustups/yus/b005_009_03.png);  
+}
+
+.i-yus-009-cfl {
+    background-image:
+        URL(assets/bustups/yus/b005_009_04.png);  
+}
+
+.i-yus-009-sfl {
+    background-image:
+        URL(assets/bustups/yus/b005_009_05.png);  
+}
+
+.i-yus-009-cwn {
+    background-image:
+        URL(assets/bustups/yus/b005_009_06.png);  
+}
+
+.i-yus-009-cwe {
+    background-image:
+        URL(assets/bustups/yus/b005_009_07.png);
+}
+
+.i-yus-009-new {
+    background-image:
+        URL(assets/bustups/yus/b005_009_08.png);
+}
+
+.i-yus-009-xxn {
+    background-image:
+        URL(assets/bustups/yus/b005_009_09.png);
+}
+
+.i-yus-009-xxu {
+    background-image:
+        URL(assets/bustups/yus/b005_009_10.png);
+}
+
+/* now copy lines 245-1043 and replace ann with the following names:
+mak, fut, har, ren, chr, shi, mis, kaw, sae, tae, soj, yos, kas, mar, ake, sum, chi, iwa, oya*/
+
+.i-mak-nor-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_000_01.png);  
+}
+
+.i-mak-nor-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_000_02.png);  
+}
+
+.i-mak-nor-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_000_03.png);  
+}
+
+.i-mak-nor-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_000_04.png);  
+}
+
+.i-mak-nor-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_000_05.png);  
+}
+
+.i-mak-nor-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_000_06.png);  
+}
+
+.i-mak-nor-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_000_07.png);
+}
+
+.i-mak-nor-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_000_08.png);
+}
+
+.i-mak-nor-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_000_09.png);
+}
+
+.i-mak-nor-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_000_10.png);
+}
+
+.i-mak-hap-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_001_01.png);  
+}
+
+.i-mak-hap-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_001_02.png);  
+}
+
+.i-mak-hap-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_001_03.png);  
+}
+
+.i-mak-hap-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_001_04.png);  
+}
+
+.i-mak-hap-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_001_05.png);  
+}
+
+.i-mak-hap-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_001_06.png);  
+}
+
+.i-mak-hap-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_001_07.png);
+}
+
+.i-mak-hap-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_001_08.png);
+}
+
+.i-mak-hap-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_001_09.png);
+}
+
+.i-mak-hap-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_001_10.png);
+}
+
+.i-mak-mad-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_002_01.png);  
+}
+
+.i-mak-mad-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_002_02.png);  
+}
+
+.i-mak-mad-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_002_03.png);  
+}
+
+.i-mak-mad-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_002_04.png);  
+}
+
+.i-mak-mad-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_002_05.png);  
+}
+
+.i-mak-mad-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_002_06.png);  
+}
+
+.i-mak-mad-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_002_07.png);
+}
+
+.i-mak-mad-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_002_08.png);
+}
+
+.i-mak-mad-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_002_09.png);
+}
+
+.i-mak-mad-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_002_10.png);
+}
+
+.i-mak-sad-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_003_01.png);  
+}
+
+.i-mak-sad-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_003_02.png);  
+}
+
+.i-mak-sad-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_003_03.png);  
+}
+
+.i-mak-sad-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_003_04.png);  
+}
+
+.i-mak-sad-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_003_05.png);  
+}
+
+.i-mak-sad-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_003_06.png);  
+}
+
+.i-mak-sad-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_003_07.png);
+}
+
+.i-mak-sad-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_003_08.png);
+}
+
+.i-mak-sad-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_003_09.png);
+}
+
+.i-mak-sad-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_003_10.png);
+}
+
+.i-mak-sur-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_004_01.png);  
+}
+
+.i-mak-sur-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_004_02.png);  
+}
+
+.i-mak-sur-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_004_03.png);  
+}
+
+.i-mak-sur-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_004_04.png);  
+}
+
+.i-mak-sur-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_004_05.png);  
+}
+
+.i-mak-sur-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_004_06.png);  
+}
+
+.i-mak-sur-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_004_07.png);
+}
+
+.i-mak-sur-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_004_08.png);
+}
+
+.i-mak-sur-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_004_09.png);
+}
+
+.i-mak-sur-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_004_10.png);
+}
+
+.i-mak-hur-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_005_01.png);  
+}
+
+.i-mak-hur-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_005_02.png);  
+}
+
+.i-mak-hur-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_005_03.png);  
+}
+
+.i-mak-hur-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_005_04.png);  
+}
+
+.i-mak-hur-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_005_05.png);  
+}
+
+.i-mak-hur-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_005_06.png);  
+}
+
+.i-mak-hur-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_005_07.png);
+}
+
+.i-mak-hur-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_005_08.png);
+}
+
+.i-mak-hur-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_005_09.png);
+}
+
+.i-mak-hur-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_005_10.png);
+}
+
+.i-mak-blu-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_006_01.png);  
+}
+
+.i-mak-blu-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_006_02.png);  
+}
+
+.i-mak-blu-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_006_03.png);  
+}
+
+.i-mak-blu-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_006_04.png);  
+}
+
+.i-mak-blu-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_006_05.png);  
+}
+
+.i-mak-blu-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_006_06.png);  
+}
+
+.i-mak-blu-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_006_07.png);
+}
+
+.i-mak-blu-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_006_08.png);
+}
+
+.i-mak-blu-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_006_09.png);
+}
+
+.i-mak-blu-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_006_10.png);
+}
+
+.i-mak-emb-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_007_01.png);  
+}
+
+.i-mak-emb-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_007_02.png);  
+}
+
+.i-mak-emb-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_007_03.png);  
+}
+
+.i-mak-emb-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_007_04.png);  
+}
+
+.i-mak-emb-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_007_05.png);  
+}
+
+.i-mak-emb-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_007_06.png);  
+}
+
+.i-mak-emb-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_007_07.png);
+}
+
+.i-mak-emb-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_007_08.png);
+}
+
+.i-mak-emb-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_007_09.png);
+}
+
+.i-mak-emb-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_007_10.png);
+}
+
+.i-mak-008-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_008_01.png);  
+}
+
+.i-mak-008-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_008_02.png);  
+}
+
+.i-mak-008-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_008_03.png);  
+}
+
+.i-mak-008-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_008_04.png);  
+}
+
+.i-mak-008-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_008_05.png);  
+}
+
+.i-mak-008-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_008_06.png);  
+}
+
+.i-mak-008-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_008_07.png);
+}
+
+.i-mak-008-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_008_08.png);
+}
+
+.i-mak-008-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_008_09.png);
+}
+
+.i-mak-008-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_008_10.png);
+}
+
+.i-mak-009-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_009_01.png);  
+}
+
+.i-mak-009-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_009_02.png);  
+}
+
+.i-mak-009-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_009_03.png);  
+}
+
+.i-mak-009-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_009_04.png);  
+}
+
+.i-mak-009-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_009_05.png);  
+}
+
+.i-mak-009-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_009_06.png);  
+}
+
+.i-mak-009-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_009_07.png);
+}
+
+.i-mak-009-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_009_08.png);
+}
+
+.i-mak-009-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_009_09.png);
+}
+
+.i-mak-009-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_009_10.png);
+}
+
+.i-mak-scr-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_010_01.png);  
+}
+
+.i-mak-scr-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_010_02.png);  
+}
+
+.i-mak-scr-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_010_03.png);  
+}
+
+.i-mak-scr-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_010_04.png);  
+}
+
+.i-mak-scr-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_010_05.png);  
+}
+
+.i-mak-scr-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_010_06.png);  
+}
+
+.i-mak-scr-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_010_07.png);
+}
+
+.i-mak-scr-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_010_08.png);
+}
+
+.i-mak-scr-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_010_09.png);
+}
+
+.i-mak-scr-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_010_10.png);
+}
+
+.i-mak-hcr-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_011_01.png);  
+}
+
+.i-mak-hcr-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_011_02.png);  
+}
+
+.i-mak-hcr-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_011_03.png);  
+}
+
+.i-mak-hcr-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_011_04.png);  
+}
+
+.i-mak-hcr-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_011_05.png);  
+}
+
+.i-mak-hcr-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_011_06.png);  
+}
+
+.i-mak-hcr-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_011_07.png);
+}
+
+.i-mak-hcr-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_011_08.png);
+}
+
+.i-mak-hcr-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_011_09.png);
+}
+
+.i-mak-hcr-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_011_10.png);
+}
+
+.i-mak-hp2-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_012_01.png);  
+}
+
+.i-mak-hp2-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_012_02.png);  
+}
+
+.i-mak-hp2-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_012_03.png);  
+}
+
+.i-mak-hp2-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_012_04.png);  
+}
+
+.i-mak-hp2-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_012_05.png);  
+}
+
+.i-mak-hp2-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_012_06.png);  
+}
+
+.i-mak-hp2-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_012_07.png);
+}
+
+.i-mak-hp2-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_012_08.png);
+}
+
+.i-mak-hp2-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_012_09.png);
+}
+
+.i-mak-hp2-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_012_10.png);
+}
+
+.i-mak-md2-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_013_01.png);  
+}
+
+.i-mak-md2-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_013_02.png);  
+}
+
+.i-mak-md2-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_013_03.png);  
+}
+
+.i-mak-md2-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_013_04.png);  
+}
+
+.i-mak-md2-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_013_05.png);  
+}
+
+.i-mak-md2-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_013_06.png);  
+}
+
+.i-mak-md2-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_013_07.png);
+}
+
+.i-mak-md2-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_013_08.png);
+}
+
+.i-mak-md2-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_013_09.png);
+}
+
+.i-mak-md2-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_013_10.png);
+}
+
+.i-mak-sr2-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_014_01.png);  
+}
+
+.i-mak-sr2-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_014_02.png);  
+}
+
+.i-mak-sr2-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_014_03.png);  
+}
+
+.i-mak-sr2-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_014_04.png);  
+}
+
+.i-mak-sr2-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_014_05.png);  
+}
+
+.i-mak-sr2-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_014_06.png);  
+}
+
+.i-mak-sr2-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_014_07.png);
+}
+
+.i-mak-sr2-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_014_08.png);
+}
+
+.i-mak-sr2-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_014_09.png);
+}
+
+.i-mak-sr2-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_014_10.png);
+}
+
+.i-mak-hr2-csp {
+    background-image:
+        URL(assets/bustups/makoto/b006_015_01.png);  
+}
+
+.i-mak-hr2-ssp {
+    background-image:
+        URL(assets/bustups/makoto/b006_015_02.png);  
+}
+
+.i-mak-hr2-sum {
+    background-image:
+        URL(assets/bustups/makoto/b006_015_03.png);  
+}
+
+.i-mak-hr2-cfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_015_04.png);  
+}
+
+.i-mak-hr2-sfl {
+    background-image:
+        URL(assets/bustups/makoto/b006_015_05.png);  
+}
+
+.i-mak-hr2-cwn {
+    background-image:
+        URL(assets/bustups/makoto/b006_015_06.png);  
+}
+
+.i-mak-hr2-cwe {
+    background-image:
+        URL(assets/bustups/makoto/b006_015_07.png);
+}
+
+.i-mak-hr2-new {
+    background-image:
+        URL(assets/bustups/makoto/b006_015_08.png);
+}
+
+.i-mak-hr2-xxn {
+    background-image:
+        URL(assets/bustups/makoto/b006_015_09.png);
+}
+
+.i-mak-hr2-xxu {
+    background-image:
+        URL(assets/bustups/makoto/b006_015_10.png);
+}
+
+.i-har-nor-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_000_01.png);  
+}
+
+.i-har-nor-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_000_02.png);  
+}
+
+.i-har-nor-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_000_03.png);  
+}
+
+.i-har-nor-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_000_04.png);  
+}
+
+.i-har-nor-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_000_05.png);  
+}
+
+.i-har-nor-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_000_06.png);  
+}
+
+.i-har-nor-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_000_07.png);
+}
+
+.i-har-nor-new {
+    background-image:
+        URL(assets/bustups/haru/b007_000_08.png);
+}
+
+.i-har-nor-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_000_09.png);
+}
+
+.i-har-nor-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_000_10.png);
+}
+
+.i-har-hap-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_001_01.png);  
+}
+
+.i-har-hap-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_001_02.png);  
+}
+
+.i-har-hap-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_001_03.png);  
+}
+
+.i-har-hap-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_001_04.png);  
+}
+
+.i-har-hap-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_001_05.png);  
+}
+
+.i-har-hap-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_001_06.png);  
+}
+
+.i-har-hap-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_001_07.png);
+}
+
+.i-har-hap-new {
+    background-image:
+        URL(assets/bustups/haru/b007_001_08.png);
+}
+
+.i-har-hap-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_001_09.png);
+}
+
+.i-har-hap-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_001_10.png);
+}
+
+.i-har-mad-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_002_01.png);  
+}
+
+.i-har-mad-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_002_02.png);  
+}
+
+.i-har-mad-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_002_03.png);  
+}
+
+.i-har-mad-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_002_04.png);  
+}
+
+.i-har-mad-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_002_05.png);  
+}
+
+.i-har-mad-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_002_06.png);  
+}
+
+.i-har-mad-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_002_07.png);
+}
+
+.i-har-mad-new {
+    background-image:
+        URL(assets/bustups/haru/b007_002_08.png);
+}
+
+.i-har-mad-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_002_09.png);
+}
+
+.i-har-mad-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_002_10.png);
+}
+
+.i-har-sad-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_003_01.png);  
+}
+
+.i-har-sad-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_003_02.png);  
+}
+
+.i-har-sad-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_003_03.png);  
+}
+
+.i-har-sad-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_003_04.png);  
+}
+
+.i-har-sad-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_003_05.png);  
+}
+
+.i-har-sad-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_003_06.png);  
+}
+
+.i-har-sad-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_003_07.png);
+}
+
+.i-har-sad-new {
+    background-image:
+        URL(assets/bustups/haru/b007_003_08.png);
+}
+
+.i-har-sad-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_003_09.png);
+}
+
+.i-har-sad-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_003_10.png);
+}
+
+.i-har-sur-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_004_01.png);  
+}
+
+.i-har-sur-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_004_02.png);  
+}
+
+.i-har-sur-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_004_03.png);  
+}
+
+.i-har-sur-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_004_04.png);  
+}
+
+.i-har-sur-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_004_05.png);  
+}
+
+.i-har-sur-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_004_06.png);  
+}
+
+.i-har-sur-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_004_07.png);
+}
+
+.i-har-sur-new {
+    background-image:
+        URL(assets/bustups/haru/b007_004_08.png);
+}
+
+.i-har-sur-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_004_09.png);
+}
+
+.i-har-sur-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_004_10.png);
+}
+
+.i-har-hur-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_005_01.png);  
+}
+
+.i-har-hur-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_005_02.png);  
+}
+
+.i-har-hur-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_005_03.png);  
+}
+
+.i-har-hur-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_005_04.png);  
+}
+
+.i-har-hur-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_005_05.png);  
+}
+
+.i-har-hur-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_005_06.png);  
+}
+
+.i-har-hur-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_005_07.png);
+}
+
+.i-har-hur-new {
+    background-image:
+        URL(assets/bustups/haru/b007_005_08.png);
+}
+
+.i-har-hur-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_005_09.png);
+}
+
+.i-har-hur-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_005_10.png);
+}
+
+.i-har-blu-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_006_01.png);  
+}
+
+.i-har-blu-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_006_02.png);  
+}
+
+.i-har-blu-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_006_03.png);  
+}
+
+.i-har-blu-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_006_04.png);  
+}
+
+.i-har-blu-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_006_05.png);  
+}
+
+.i-har-blu-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_006_06.png);  
+}
+
+.i-har-blu-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_006_07.png);
+}
+
+.i-har-blu-new {
+    background-image:
+        URL(assets/bustups/haru/b007_006_08.png);
+}
+
+.i-har-blu-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_006_09.png);
+}
+
+.i-har-blu-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_006_10.png);
+}
+
+.i-har-emb-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_007_01.png);  
+}
+
+.i-har-emb-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_007_02.png);  
+}
+
+.i-har-emb-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_007_03.png);  
+}
+
+.i-har-emb-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_007_04.png);  
+}
+
+.i-har-emb-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_007_05.png);  
+}
+
+.i-har-emb-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_007_06.png);  
+}
+
+.i-har-emb-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_007_07.png);
+}
+
+.i-har-emb-new {
+    background-image:
+        URL(assets/bustups/haru/b007_007_08.png);
+}
+
+.i-har-emb-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_007_09.png);
+}
+
+.i-har-emb-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_007_10.png);
+}
+
+.i-har-008-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_008_01.png);  
+}
+
+.i-har-008-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_008_02.png);  
+}
+
+.i-har-008-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_008_03.png);  
+}
+
+.i-har-008-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_008_04.png);  
+}
+
+.i-har-008-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_008_05.png);  
+}
+
+.i-har-008-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_008_06.png);  
+}
+
+.i-har-008-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_008_07.png);
+}
+
+.i-har-008-new {
+    background-image:
+        URL(assets/bustups/haru/b007_008_08.png);
+}
+
+.i-har-008-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_008_09.png);
+}
+
+.i-har-008-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_008_10.png);
+}
+
+.i-har-009-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_009_01.png);  
+}
+
+.i-har-009-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_009_02.png);  
+}
+
+.i-har-009-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_009_03.png);  
+}
+
+.i-har-009-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_009_04.png);  
+}
+
+.i-har-009-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_009_05.png);  
+}
+
+.i-har-009-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_009_06.png);  
+}
+
+.i-har-009-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_009_07.png);
+}
+
+.i-har-009-new {
+    background-image:
+        URL(assets/bustups/haru/b007_009_08.png);
+}
+
+.i-har-009-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_009_09.png);
+}
+
+.i-har-009-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_009_10.png);
+}
+
+.i-har-scr-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_010_01.png);  
+}
+
+.i-har-scr-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_010_02.png);  
+}
+
+.i-har-scr-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_010_03.png);  
+}
+
+.i-har-scr-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_010_04.png);  
+}
+
+.i-har-scr-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_010_05.png);  
+}
+
+.i-har-scr-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_010_06.png);  
+}
+
+.i-har-scr-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_010_07.png);
+}
+
+.i-har-scr-new {
+    background-image:
+        URL(assets/bustups/haru/b007_010_08.png);
+}
+
+.i-har-scr-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_010_09.png);
+}
+
+.i-har-scr-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_010_10.png);
+}
+
+.i-har-hcr-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_011_01.png);  
+}
+
+.i-har-hcr-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_011_02.png);  
+}
+
+.i-har-hcr-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_011_03.png);  
+}
+
+.i-har-hcr-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_011_04.png);  
+}
+
+.i-har-hcr-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_011_05.png);  
+}
+
+.i-har-hcr-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_011_06.png);  
+}
+
+.i-har-hcr-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_011_07.png);
+}
+
+.i-har-hcr-new {
+    background-image:
+        URL(assets/bustups/haru/b007_011_08.png);
+}
+
+.i-har-hcr-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_011_09.png);
+}
+
+.i-har-hcr-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_011_10.png);
+}
+
+.i-har-hp2-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_012_01.png);  
+}
+
+.i-har-hp2-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_012_02.png);  
+}
+
+.i-har-hp2-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_012_03.png);  
+}
+
+.i-har-hp2-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_012_04.png);  
+}
+
+.i-har-hp2-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_012_05.png);  
+}
+
+.i-har-hp2-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_012_06.png);  
+}
+
+.i-har-hp2-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_012_07.png);
+}
+
+.i-har-hp2-new {
+    background-image:
+        URL(assets/bustups/haru/b007_012_08.png);
+}
+
+.i-har-hp2-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_012_09.png);
+}
+
+.i-har-hp2-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_012_10.png);
+}
+
+.i-har-md2-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_013_01.png);  
+}
+
+.i-har-md2-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_013_02.png);  
+}
+
+.i-har-md2-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_013_03.png);  
+}
+
+.i-har-md2-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_013_04.png);  
+}
+
+.i-har-md2-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_013_05.png);  
+}
+
+.i-har-md2-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_013_06.png);  
+}
+
+.i-har-md2-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_013_07.png);
+}
+
+.i-har-md2-new {
+    background-image:
+        URL(assets/bustups/haru/b007_013_08.png);
+}
+
+.i-har-md2-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_013_09.png);
+}
+
+.i-har-md2-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_013_10.png);
+}
+
+.i-har-sr2-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_014_01.png);  
+}
+
+.i-har-sr2-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_014_02.png);  
+}
+
+.i-har-sr2-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_014_03.png);  
+}
+
+.i-har-sr2-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_014_04.png);  
+}
+
+.i-har-sr2-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_014_05.png);  
+}
+
+.i-har-sr2-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_014_06.png);  
+}
+
+.i-har-sr2-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_014_07.png);
+}
+
+.i-har-sr2-new {
+    background-image:
+        URL(assets/bustups/haru/b007_014_08.png);
+}
+
+.i-har-sr2-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_014_09.png);
+}
+
+.i-har-sr2-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_014_10.png);
+}
+
+.i-har-hr2-csp {
+    background-image:
+        URL(assets/bustups/haru/b007_015_01.png);  
+}
+
+.i-har-hr2-ssp {
+    background-image:
+        URL(assets/bustups/haru/b007_015_02.png);  
+}
+
+.i-har-hr2-sum {
+    background-image:
+        URL(assets/bustups/haru/b007_015_03.png);  
+}
+
+.i-har-hr2-cfl {
+    background-image:
+        URL(assets/bustups/haru/b007_015_04.png);  
+}
+
+.i-har-hr2-sfl {
+    background-image:
+        URL(assets/bustups/haru/b007_015_05.png);  
+}
+
+.i-har-hr2-cwn {
+    background-image:
+        URL(assets/bustups/haru/b007_015_06.png);  
+}
+
+.i-har-hr2-cwe {
+    background-image:
+        URL(assets/bustups/haru/b007_015_07.png);
+}
+
+.i-har-hr2-new {
+    background-image:
+        URL(assets/bustups/haru/b007_015_08.png);
+}
+
+.i-har-hr2-xxn {
+    background-image:
+        URL(assets/bustups/haru/b007_015_09.png);
+}
+
+.i-har-hr2-xxu {
+    background-image:
+        URL(assets/bustups/haru/b007_015_10.png);
+}
+
+.i-fut-nor-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_000_03.png);  
+}
+
+.i-fut-nor-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_000_04.png);  
+}
+
+.i-fut-nor-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_000_05.png);  
+}
+
+.i-fut-nor-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_000_06.png);  
+}
+
+.i-fut-nor-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_000_07.png);
+}
+
+.i-fut-nor-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_000_08.png);
+}
+
+.i-fut-nor-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_000_09.png);
+}
+
+.i-fut-nor-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_000_10.png);
+}
+
+.i-fut-hap-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_001_03.png);  
+}
+
+.i-fut-hap-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_001_04.png);  
+}
+
+.i-fut-hap-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_001_05.png);  
+}
+
+.i-fut-hap-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_001_06.png);  
+}
+
+.i-fut-hap-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_001_07.png);
+}
+
+.i-fut-hap-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_001_08.png);
+}
+
+.i-fut-hap-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_001_09.png);
+}
+
+.i-fut-hap-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_001_10.png);
+}
+
+.i-fut-mad-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_002_03.png);  
+}
+
+.i-fut-mad-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_002_04.png);  
+}
+
+.i-fut-mad-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_002_05.png);  
+}
+
+.i-fut-mad-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_002_06.png);  
+}
+
+.i-fut-mad-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_002_07.png);
+}
+
+.i-fut-mad-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_002_08.png);
+}
+
+.i-fut-mad-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_002_09.png);
+}
+
+.i-fut-mad-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_002_10.png);
+}
+
+.i-fut-sad-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_003_03.png);  
+}
+
+.i-fut-sad-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_003_04.png);  
+}
+
+.i-fut-sad-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_003_05.png);  
+}
+
+.i-fut-sad-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_003_06.png);  
+}
+
+.i-fut-sad-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_003_07.png);
+}
+
+.i-fut-sad-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_003_08.png);
+}
+
+.i-fut-sad-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_003_09.png);
+}
+
+.i-fut-sad-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_003_10.png);
+}
+
+.i-fut-sur-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_004_03.png);  
+}
+
+.i-fut-sur-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_004_04.png);  
+}
+
+.i-fut-sur-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_004_05.png);  
+}
+
+.i-fut-sur-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_004_06.png);  
+}
+
+.i-fut-sur-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_004_07.png);
+}
+
+.i-fut-sur-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_004_08.png);
+}
+
+.i-fut-sur-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_004_09.png);
+}
+
+.i-fut-sur-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_004_10.png);
+}
+
+.i-fut-hur-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_005_03.png);  
+}
+
+.i-fut-hur-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_005_04.png);  
+}
+
+.i-fut-hur-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_005_05.png);  
+}
+
+.i-fut-hur-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_005_06.png);  
+}
+
+.i-fut-hur-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_005_07.png);
+}
+
+.i-fut-hur-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_005_08.png);
+}
+
+.i-fut-hur-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_005_09.png);
+}
+
+.i-fut-hur-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_005_10.png);
+}
+
+.i-fut-blu-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_006_03.png);  
+}
+
+.i-fut-blu-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_006_04.png);  
+}
+
+.i-fut-blu-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_006_05.png);  
+}
+
+.i-fut-blu-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_006_06.png);  
+}
+
+.i-fut-blu-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_006_07.png);
+}
+
+.i-fut-blu-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_006_08.png);
+}
+
+.i-fut-blu-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_006_09.png);
+}
+
+.i-fut-blu-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_006_10.png);
+}
+
+.i-fut-emb-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_007_03.png);  
+}
+
+.i-fut-emb-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_007_04.png);  
+}
+
+.i-fut-emb-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_007_05.png);  
+}
+
+.i-fut-emb-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_007_06.png);  
+}
+
+.i-fut-emb-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_007_07.png);
+}
+
+.i-fut-emb-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_007_08.png);
+}
+
+.i-fut-emb-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_007_09.png);
+}
+
+.i-fut-emb-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_007_10.png);
+}
+
+.i-fut-008-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_008_03.png);  
+}
+
+.i-fut-008-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_008_04.png);  
+}
+
+.i-fut-008-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_008_05.png);  
+}
+
+.i-fut-008-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_008_06.png);  
+}
+
+.i-fut-008-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_008_07.png);
+}
+
+.i-fut-008-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_008_08.png);
+}
+
+.i-fut-008-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_008_09.png);
+}
+
+.i-fut-008-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_008_10.png);
+}
+
+.i-fut-009-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_009_03.png);  
+}
+
+.i-fut-009-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_009_04.png);  
+}
+
+.i-fut-009-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_009_05.png);  
+}
+
+.i-fut-009-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_009_06.png);  
+}
+
+.i-fut-009-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_009_07.png);
+}
+
+.i-fut-009-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_009_08.png);
+}
+
+.i-fut-009-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_009_09.png);
+}
+
+.i-fut-009-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_009_10.png);
+}
+
+.i-fut-scr-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_010_03.png);  
+}
+
+.i-fut-scr-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_010_04.png);  
+}
+
+.i-fut-scr-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_010_05.png);  
+}
+
+.i-fut-scr-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_010_06.png);  
+}
+
+.i-fut-scr-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_010_07.png);
+}
+
+.i-fut-scr-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_010_08.png);
+}
+
+.i-fut-scr-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_010_09.png);
+}
+
+.i-fut-scr-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_010_10.png);
+}
+
+.i-fut-hcr-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_011_03.png);  
+}
+
+.i-fut-hcr-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_011_04.png);  
+}
+
+.i-fut-hcr-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_011_05.png);  
+}
+
+.i-fut-hcr-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_011_06.png);  
+}
+
+.i-fut-hcr-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_011_07.png);
+}
+
+.i-fut-hcr-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_011_08.png);
+}
+
+.i-fut-hcr-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_011_09.png);
+}
+
+.i-fut-hcr-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_011_10.png);
+}
+
+.i-fut-hp2-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_012_03.png);  
+}
+
+.i-fut-hp2-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_012_04.png);  
+}
+
+.i-fut-hp2-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_012_05.png);  
+}
+
+.i-fut-hp2-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_012_06.png);  
+}
+
+.i-fut-hp2-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_012_07.png);
+}
+
+.i-fut-hp2-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_012_08.png);
+}
+
+.i-fut-hp2-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_012_09.png);
+}
+
+.i-fut-hp2-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_012_10.png);
+}
+
+.i-fut-md2-csp {
+    background-image:
+        URL(assets/bustups/futaba/b008_013_01.png);  
+}
+
+.i-fut-md2-ssp {
+    background-image:
+        URL(assets/bustups/futaba/b008_013_02.png);  
+}
+
+.i-fut-md2-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_013_03.png);  
+}
+
+.i-fut-md2-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_013_04.png);  
+}
+
+.i-fut-md2-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_013_05.png);  
+}
+
+.i-fut-md2-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_013_06.png);  
+}
+
+.i-fut-md2-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_013_07.png);
+}
+
+.i-fut-md2-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_013_08.png);
+}
+
+.i-fut-md2-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_013_09.png);
+}
+
+.i-fut-md2-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_013_10.png);
+}
+
+.i-fut-sr2-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_014_03.png);  
+}
+
+.i-fut-sr2-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_014_04.png);  
+}
+
+.i-fut-sr2-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_014_05.png);  
+}
+
+.i-fut-sr2-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_014_06.png);  
+}
+
+.i-fut-sr2-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_014_07.png);
+}
+
+.i-fut-sr2-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_014_08.png);
+}
+
+.i-fut-sr2-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_014_09.png);
+}
+
+.i-fut-sr2-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_014_10.png);
+}
+
+.i-fut-hr2-sum {
+    background-image:
+        URL(assets/bustups/futaba/b008_015_03.png);  
+}
+
+.i-fut-hr2-cfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_015_04.png);  
+}
+
+.i-fut-hr2-sfl {
+    background-image:
+        URL(assets/bustups/futaba/b008_015_05.png);  
+}
+
+.i-fut-hr2-cwn {
+    background-image:
+        URL(assets/bustups/futaba/b008_015_06.png);  
+}
+
+.i-fut-hr2-cwe {
+    background-image:
+        URL(assets/bustups/futaba/b008_015_07.png);
+}
+
+.i-fut-hr2-new {
+    background-image:
+        URL(assets/bustups/futaba/b008_015_08.png);
+}
+
+.i-fut-hr2-xxn {
+    background-image:
+        URL(assets/bustups/futaba/b008_015_09.png);
+}
+
+.i-fut-hr2-xxu {
+    background-image:
+        URL(assets/bustups/futaba/b008_015_10.png);
+}
+
+.i-shi-nor-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_000_01.png);  
+}
+
+.i-shi-nor-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_000_02.png);  
+}
+
+.i-shi-nor-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_000_03.png);  
+}
+
+.i-shi-nor-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_000_04.png);  
+}
+
+.i-shi-nor-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_000_09.png);
+}
+
+.i-shi-nor-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_000_10.png);
+}
+
+.i-shi-hap-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_001_01.png);  
+}
+
+.i-shi-hap-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_001_02.png);  
+}
+
+.i-shi-hap-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_001_03.png);  
+}
+
+.i-shi-hap-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_001_04.png);  
+}
+
+.i-shi-hap-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_001_09.png);
+}
+
+.i-shi-hap-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_001_10.png);
+}
+
+.i-shi-mad-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_002_01.png);  
+}
+
+.i-shi-mad-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_002_02.png);  
+}
+
+.i-shi-mad-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_002_03.png);  
+}
+
+.i-shi-mad-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_002_04.png);  
+}
+
+.i-shi-mad-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_002_09.png);
+}
+
+.i-shi-mad-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_002_10.png);
+}
+
+.i-shi-sad-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_003_01.png);  
+}
+
+.i-shi-sad-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_003_02.png);  
+}
+
+.i-shi-sad-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_003_03.png);  
+}
+
+.i-shi-sad-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_003_04.png);  
+}
+
+.i-shi-sad-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_003_09.png);
+}
+
+.i-shi-sad-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_003_10.png);
+}
+
+.i-shi-sur-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_004_01.png);  
+}
+
+.i-shi-sur-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_004_02.png);  
+}
+
+.i-shi-sur-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_004_03.png);  
+}
+
+.i-shi-sur-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_004_04.png);  
+}
+
+.i-shi-sur-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_004_09.png);
+}
+
+.i-shi-sur-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_004_10.png);
+}
+
+.i-shi-hur-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_005_01.png);  
+}
+
+.i-shi-hur-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_005_02.png);  
+}
+
+.i-shi-hur-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_005_03.png);  
+}
+
+.i-shi-hur-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_005_04.png);  
+}
+
+.i-shi-hur-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_005_09.png);
+}
+
+.i-shi-hur-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_005_10.png);
+}
+
+.i-shi-blu-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_006_01.png);  
+}
+
+.i-shi-blu-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_006_02.png);  
+}
+
+.i-shi-blu-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_006_03.png);  
+}
+
+.i-shi-blu-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_006_04.png);  
+}
+
+.i-shi-blu-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_006_09.png);
+}
+
+.i-shi-blu-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_006_10.png);
+}
+
+.i-shi-emb-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_007_01.png);  
+}
+
+.i-shi-emb-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_007_02.png);  
+}
+
+.i-shi-emb-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_007_03.png);  
+}
+
+.i-shi-emb-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_007_04.png);  
+}
+
+.i-shi-emb-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_007_09.png);
+}
+
+.i-shi-emb-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_007_10.png);
+}
+
+.i-shi-008-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_008_01.png);  
+}
+
+.i-shi-008-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_008_02.png);  
+}
+
+.i-shi-008-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_008_03.png);  
+}
+
+.i-shi-008-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_008_04.png);  
+}
+
+.i-shi-008-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_008_09.png);
+}
+
+.i-shi-008-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_008_10.png);
+}
+
+.i-shi-009-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_009_01.png);  
+}
+
+.i-shi-009-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_009_02.png);  
+}
+
+.i-shi-009-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_009_03.png);  
+}
+
+.i-shi-009-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_009_04.png);  
+}
+
+.i-shi-009-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_009_09.png);
+}
+
+.i-shi-009-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_009_10.png);
+}
+
+.i-shi-scr-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_010_01.png);  
+}
+
+.i-shi-scr-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_010_02.png);  
+}
+
+.i-shi-scr-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_010_03.png);  
+}
+
+.i-shi-scr-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_010_04.png);  
+}
+
+.i-shi-scr-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_010_09.png);
+}
+
+.i-shi-scr-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_010_10.png);
+}
+
+.i-shi-hcr-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_011_01.png);  
+}
+
+.i-shi-hcr-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_011_02.png);  
+}
+
+.i-shi-hcr-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_011_03.png);  
+}
+
+.i-shi-hcr-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_011_04.png);  
+}
+
+.i-shi-hcr-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_011_09.png);
+}
+
+.i-shi-hcr-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_011_10.png);
+}
+
+.i-shi-hp2-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_012_01.png);  
+}
+
+.i-shi-hp2-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_012_02.png);  
+}
+
+.i-shi-hp2-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_012_03.png);  
+}
+
+.i-shi-hp2-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_012_04.png);  
+}
+
+.i-shi-hp2-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_012_09.png);
+}
+
+.i-shi-hp2-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_012_10.png);
+}
+
+.i-shi-md2-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_013_01.png);  
+}
+
+.i-shi-md2-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_013_02.png);  
+}
+
+.i-shi-md2-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_013_03.png);  
+}
+
+.i-shi-md2-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_013_04.png);  
+}
+
+.i-shi-md2-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_013_09.png);
+}
+
+.i-shi-md2-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_013_10.png);
+}
+
+.i-shi-sr2-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_014_01.png);  
+}
+
+.i-shi-sr2-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_014_02.png);  
+}
+
+.i-shi-sr2-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_014_03.png);  
+}
+
+.i-shi-sr2-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_014_04.png);  
+}
+
+.i-shi-sr2-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_014_09.png);
+}
+
+.i-shi-sr2-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_014_10.png);
+}
+
+.i-shi-hr2-csp {
+    background-image:
+        URL(assets/bustups/shiho/b101_015_01.png);  
+}
+
+.i-shi-hr2-ssp {
+    background-image:
+        URL(assets/bustups/shiho/b101_015_02.png);  
+}
+
+.i-shi-hr2-sum {
+    background-image:
+        URL(assets/bustups/shiho/b101_015_03.png);  
+}
+
+.i-shi-hr2-cfl {
+    background-image:
+        URL(assets/bustups/shiho/b101_015_04.png);  
+}
+
+.i-shi-hr2-xxn {
+    background-image:
+        URL(assets/bustups/shiho/b101_015_09.png);
+}
+
+.i-shi-hr2-xxu {
+    background-image:
+        URL(assets/bustups/shiho/b101_015_10.png);
+}
+
+.i-soj-nor-ssp {
+    background-image:
+        URL(assets/bustups/sojiro/b103_000_00.png);  
+}
+
+.i-soj-nor-csp {
+    background-image:
+        URL(assets/bustups/sojiro/b103_500_00.png);  
+}
+
+.i-soj-nor-cwn {
+    background-image:
+        URL(assets/bustups/sojiro/b103_500_01.png);  
+}
+
+.i-soj-nor-csh {
+    background-image:
+        URL(assets/bustups/sojiro/b103_600_00.png);  
+}
+
+.i-soj-nor-cwh {
+    background-image:
+        URL(assets/bustups/sojiro/b103_600_01.png);  
+}
+
+.i-soj-nor-xxn {
+    background-image:
+        URL(assets/bustups/sojiro/b103_000_09.png);
+}
+
+.i-soj-nor-xxu {
+    background-image:
+        URL(assets/bustups/sojiro/b103_000_10.png);
+}
+
+.i-soj-hap-ssp {
+    background-image:
+        URL(assets/bustups/sojiro/b103_001_00.png);  
+}
+
+.i-soj-hap-csp {
+    background-image:
+        URL(assets/bustups/sojiro/b103_501_00.png);  
+}
+
+.i-soj-hap-cwn {
+    background-image:
+        URL(assets/bustups/sojiro/b103_501_01.png);  
+}
+
+.i-soj-hap-csh {
+    background-image:
+        URL(assets/bustups/sojiro/b103_601_00.png);  
+}
+
+.i-soj-hap-cwh {
+    background-image:
+        URL(assets/bustups/sojiro/b103_601_01.png);  
+}
+
+.i-soj-hap-xxn {
+    background-image:
+        URL(assets/bustups/sojiro/b103_001_09.png);
+}
+
+.i-soj-hap-xxu {
+    background-image:
+        URL(assets/bustups/sojiro/b103_001_10.png);
+}
+
+.i-soj-mad-ssp {
+    background-image:
+        URL(assets/bustups/sojiro/b103_002_00.png);  
+}
+
+.i-soj-mad-csp {
+    background-image:
+        URL(assets/bustups/sojiro/b103_502_00.png);  
+}
+
+.i-soj-mad-cwn {
+    background-image:
+        URL(assets/bustups/sojiro/b103_502_01.png);  
+}
+
+.i-soj-mad-csh {
+    background-image:
+        URL(assets/bustups/sojiro/b103_602_00.png);  
+}
+
+.i-soj-mad-cwh {
+    background-image:
+        URL(assets/bustups/sojiro/b103_602_01.png);  
+}
+
+.i-soj-mad-xxn {
+    background-image:
+        URL(assets/bustups/sojiro/b103_002_09.png);
+}
+
+.i-soj-mad-xxu {
+    background-image:
+        URL(assets/bustups/sojiro/b103_002_10.png);
+}
+
+.i-soj-sad-ssp {
+    background-image:
+        URL(assets/bustups/sojiro/b103_003_00.png);  
+}
+
+.i-soj-sad-csp {
+    background-image:
+        URL(assets/bustups/sojiro/b103_503_00.png);  
+}
+
+.i-soj-sad-cwn {
+    background-image:
+        URL(assets/bustups/sojiro/b103_503_01.png);  
+}
+
+.i-soj-sad-csh {
+    background-image:
+        URL(assets/bustups/sojiro/b103_603_00.png);  
+}
+
+.i-soj-sad-cwh {
+    background-image:
+        URL(assets/bustups/sojiro/b103_603_01.png);  
+}
+
+.i-soj-sad-xxn {
+    background-image:
+        URL(assets/bustups/sojiro/b103_003_09.png);
+}
+
+.i-soj-sad-xxu {
+    background-image:
+        URL(assets/bustups/sojiro/b103_003_10.png);
+}
+
+.i-soj-sur-ssp {
+    background-image:
+        URL(assets/bustups/sojiro/b103_004_00.png);  
+}
+
+.i-soj-sur-csp {
+    background-image:
+        URL(assets/bustups/sojiro/b103_504_00.png);  
+}
+
+.i-soj-sur-cwn {
+    background-image:
+        URL(assets/bustups/sojiro/b103_504_01.png);  
+}
+
+.i-soj-sur-csh {
+    background-image:
+        URL(assets/bustups/sojiro/b103_604_00.png);  
+}
+
+.i-soj-sur-cwh {
+    background-image:
+        URL(assets/bustups/sojiro/b103_604_01.png);  
+}
+
+.i-soj-sur-xxn {
+    background-image:
+        URL(assets/bustups/sojiro/b103_004_09.png);
+}
+
+.i-soj-sur-xxu {
+    background-image:
+        URL(assets/bustups/sojiro/b103_004_10.png);
+}
+
+.i-soj-hur-ssp {
+    background-image:
+        URL(assets/bustups/sojiro/b103_005_00.png);  
+}
+
+.i-soj-hur-csp {
+    background-image:
+        URL(assets/bustups/sojiro/b103_505_00.png);  
+}
+
+.i-soj-hur-cwn {
+    background-image:
+        URL(assets/bustups/sojiro/b103_505_01.png);  
+}
+
+.i-soj-hur-csh {
+    background-image:
+        URL(assets/bustups/sojiro/b103_605_00.png);  
+}
+
+.i-soj-hur-cwh {
+    background-image:
+        URL(assets/bustups/sojiro/b103_605_01.png);  
+}
+
+.i-soj-hur-xxn {
+    background-image:
+        URL(assets/bustups/sojiro/b103_005_09.png);
+}
+
+.i-soj-hur-xxu {
+    background-image:
+        URL(assets/bustups/sojiro/b103_005_10.png);
+}
+
+.i-sae-nor-ssp {
+    background-image:
+        URL(assets/bustups/sae/b105_000_00.png);  
+}
+
+.i-sae-nor-wsp {
+    background-image:
+        URL(assets/bustups/sae/b105_000_05.png);  
+}
+
+.i-sae-nor-sha {
+    background-image:
+        URL(assets/bustups/sae/b105_100_00.png);  
+}
+
+.i-sae-hap-ssp {
+    background-image:
+        URL(assets/bustups/sae/b105_001_00.png);  
+}
+
+.i-sae-hap-wsp {
+    background-image:
+        URL(assets/bustups/sae/b105_001_05.png);  
+}
+
+.i-sae-hap-sha {
+    background-image:
+        URL(assets/bustups/sae/b105_101_00.png);  
+}
+
+.i-sae-mad-ssp {
+    background-image:
+        URL(assets/bustups/sae/b105_002_00.png);  
+}
+
+.i-sae-mad-wsp {
+    background-image:
+        URL(assets/bustups/sae/b105_002_05.png);  
+}
+
+.i-sae-mad-sha {
+    background-image:
+        URL(assets/bustups/sae/b105_102_00.png);  
+}
+
+.i-sae-sad-ssp {
+    background-image:
+        URL(assets/bustups/sae/b105_003_00.png);  
+}
+
+.i-sae-sad-wsp {
+    background-image:
+        URL(assets/bustups/sae/b105_003_05.png);  
+}
+
+.i-sae-sad-sha {
+    background-image:
+        URL(assets/bustups/sae/b105_103_00.png);  
+}
+
+.i-sae-sur-ssp {
+    background-image:
+        URL(assets/bustups/sae/b105_004_00.png);  
+}
+
+.i-sae-sur-wsp {
+    background-image:
+        URL(assets/bustups/sae/b105_004_05.png);  
+}
+
+.i-sae-sur-sha {
+    background-image:
+        URL(assets/bustups/sae/b105_104_00.png);  
+}
+
+.i-sae-hur-ssp {
+    background-image:
+        URL(assets/bustups/sae/b105_005_00.png);  
+}
+
+.i-sae-hur-wsp {
+    background-image:
+        URL(assets/bustups/sae/b105_005_05.png);  
+}
+
+.i-sae-hur-sha {
+    background-image:
+        URL(assets/bustups/sae/b105_105_00.png);  
+}
+
+.i-hif-nor-ssp {
+    background-image:
+        URL(assets/bustups/hifumi/b106_000_00.png);  
+}   
+
+/*****cutins*****/
